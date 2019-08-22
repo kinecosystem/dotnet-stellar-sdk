@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace stellar_dotnet_sdk.responses
+namespace kin_base.responses
 {
     public class OperationFeeStatsResponse : Response
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     public class Network
     {

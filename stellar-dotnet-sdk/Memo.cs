@@ -1,4 +1,4 @@
-﻿namespace stellar_dotnet_sdk
+﻿namespace kin_base
 {
     /// <summary>
     /// Abstract class for creating various Memo Types.

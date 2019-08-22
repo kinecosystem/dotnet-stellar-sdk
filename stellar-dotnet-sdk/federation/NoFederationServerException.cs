@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace stellar_dotnet_sdk.federation
+namespace kin_base.federation
 {
     /// <summary>
     ///     Federation server was not found in stellar.toml file.

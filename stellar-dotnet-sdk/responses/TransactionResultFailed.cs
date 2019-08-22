@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using stellar_dotnet_sdk.responses.results;
+using kin_base.responses.results;
 
-namespace stellar_dotnet_sdk.responses
+namespace kin_base.responses
 {
     /// <summary>
     /// One of the operations failed (none were applied).

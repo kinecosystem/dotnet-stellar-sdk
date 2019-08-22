@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     public abstract class MemoHashAbstract : Memo
     {

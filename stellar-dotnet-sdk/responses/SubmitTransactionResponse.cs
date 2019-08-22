@@ -1,9 +1,9 @@
 ﻿using Newtonsoft.Json;
-using stellar_dotnet_sdk.xdr;
+using kin_base.xdr;
 using System;
 using System.Collections.Generic;
 
-namespace stellar_dotnet_sdk.responses
+namespace kin_base.responses
 {
     public class SubmitTransactionResponse : Response
     {

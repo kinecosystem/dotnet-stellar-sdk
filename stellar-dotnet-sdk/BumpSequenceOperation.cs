@@ -1,8 +1,8 @@
-﻿using stellar_dotnet_sdk.xdr;
+﻿using kin_base.xdr;
 using System;
-using static stellar_dotnet_sdk.xdr.Operation;
+using static kin_base.xdr.Operation;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     /// <summary>
     /// Represents a <see cref="BumpSequenceOp"/>.

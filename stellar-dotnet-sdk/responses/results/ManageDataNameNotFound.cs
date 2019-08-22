@@ -1,4 +1,4 @@
-namespace stellar_dotnet_sdk.responses.results
+namespace kin_base.responses.results
 {
     /// <summary>
     /// Trying to remove a data entry that isn't there.

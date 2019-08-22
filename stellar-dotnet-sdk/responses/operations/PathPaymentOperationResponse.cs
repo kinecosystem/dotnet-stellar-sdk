@@ -1,10 +1,10 @@
 ﻿using Newtonsoft.Json;
 
-namespace stellar_dotnet_sdk.responses.operations
+namespace kin_base.responses.operations
 {
     /// <inheritdoc />
     /// <summary>
-    /// Sends an amount in a specific asset to a destination account through a path of offers. This allows the asset sent (e.g., 450 XLM) to be different from the asset received (e.g, 6 BTC).
+    /// Sends an amount in a specific asset to a destination account through a path of offers. This allows the asset sent (e.g., 450 KIN) to be different from the asset received (e.g, 6 BTC).
     /// See: https://www.stellar.org/developers/horizon/reference/resources/operation.html
     /// <seealso cref="T:stellar_dotnetcore_sdk.requests.OperationsRequestBuilder" />
     /// <seealso cref="T:stellar_dotnetcore_sdk.Server" />
@@ -17,7 +17,7 @@ namespace stellar_dotnet_sdk.responses.operations
         }
 
         /// <summary>
-        /// Sends an amount in a specific asset to a destination account through a path of offers. This allows the asset sent (e.g., 450 XLM) to be different from the asset received (e.g, 6 BTC).
+        /// Sends an amount in a specific asset to a destination account through a path of offers. This allows the asset sent (e.g., 450 KIN) to be different from the asset received (e.g, 6 BTC).
         /// </summary>
         /// <param name="amount">The amount of destination asset the destination account receives.</param>
         /// <param name="sourceMax">The amount of source asset deducted from senders account.</param>

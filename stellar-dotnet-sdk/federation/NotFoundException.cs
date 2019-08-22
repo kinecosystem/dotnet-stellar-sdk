@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace stellar_dotnet_sdk.federation
+namespace kin_base.federation
 {
     public class NotFoundException : Exception
     {

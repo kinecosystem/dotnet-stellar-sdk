@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     /// <summary>
     /// Assets are uniquely identified by the asset code and the issuer. Ultimately, it’s up to the issuer to set the asset code. By convention, however, currencies should be represented by 

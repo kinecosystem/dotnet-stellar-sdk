@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Net.Http;
 using System.Threading.Tasks;
-using stellar_dotnet_sdk.responses;
+using kin_base.responses;
 
-namespace stellar_dotnet_sdk.requests
+namespace kin_base.requests
 {
     /// <summary>
     ///     Builds requests connected to accounts.

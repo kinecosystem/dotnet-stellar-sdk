@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace stellar_dotnet_sdk.federation
+namespace kin_base.federation
 {
     /// <summary>
     ///     Object to hold a response from a federation server.

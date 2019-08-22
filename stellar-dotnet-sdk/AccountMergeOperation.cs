@@ -1,7 +1,7 @@
 ﻿using System;
-using stellar_dotnet_sdk.xdr;
+using kin_base.xdr;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     /// <summary>
     /// Represents an <see cref="AccountID"/> Encode operation.
@@ -17,7 +17,7 @@ namespace stellar_dotnet_sdk
         }
 
         /// <summary>
-        ///     The account that receives the remaining XLM balance of the source account.
+        ///     The account that receives the remaining KIN balance of the source account.
         /// </summary>
         public KeyPair Destination { get; }
 
@@ -59,7 +59,7 @@ namespace stellar_dotnet_sdk
             /// <summary>
             ///     Creates a new AccountMerge builder.
             /// </summary>
-            /// <param name="destination">destination The account that receives the remaining XLM balance of the source account.</param>
+            /// <param name="destination">destination The account that receives the remaining KIN balance of the source account.</param>
             public Builder(KeyPair destination)
             {
                 _destination = destination;

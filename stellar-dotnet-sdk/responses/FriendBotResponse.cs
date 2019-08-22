@@ -1,10 +1,10 @@
 ﻿using Newtonsoft.Json;
-using stellar_dotnet_sdk.responses;
+using kin_base.responses;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace stellar_dotnet_sdk.responses
+namespace kin_base.responses
 {
     public class FriendBotResponse
     {

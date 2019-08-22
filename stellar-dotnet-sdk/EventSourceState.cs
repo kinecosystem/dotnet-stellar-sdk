@@ -3,7 +3,7 @@
  *  Redistribution and use in source and binary forms, with or without modification, is permitted.
  */
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     public sealed partial class EventSource
     {

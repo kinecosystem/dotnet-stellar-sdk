@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     /// <summary>
     /// Returns information and links relating to a single account.

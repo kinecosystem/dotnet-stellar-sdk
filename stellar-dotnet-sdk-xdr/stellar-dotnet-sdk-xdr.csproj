@@ -6,18 +6,17 @@
     <ApplicationIcon />
     <OutputType>Library</OutputType>
     <StartupObject />
-    <RootNamespace>stellar_dotnet_sdk_xdr</RootNamespace>
+    <RootNamespace>kin_base_xdr</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Description>The .NET Standard XDR Objects for the Stellar Network Protocol</Description>
-    <PackageId>stellar-dotnet-sdk-xdr</PackageId>
-    <PackageLicense></PackageLicense>
-    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <Copyright>elucidsoft 2019</Copyright>
-    <PackageProjectUrl>https://github.com/elucidsoft/dotnet-stellar-sdk/tree/master/stellar-dotnet-sdk-xdr</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/elucidsoft/dotnet-stellar-sdk/tree/master/stellar-dotnet-sdk-xdr</RepositoryUrl>
+    <Description>The .NET Standard XDR Objects for the Kin Network Protocol</Description>
+    <PackageId>kin-base-xdr</PackageId>
+    <PackageLicense>Apache-2.0</PackageLicense>
+    <Copyright>elucidsoft 2019, KinEcosystem 2019</Copyright>
+    <PackageProjectUrl>https://github.com/kinecosystem/kin-base-csharp/tree/master/kin-base-xdr</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/kinecosystem/kin-base-csharp/tree/master/kin-base-xdr</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>'.NET Core' 'Stellar' 'Horizon' 'Blockchain' 'Crypto' 'Distributed Ledger'</PackageTags>
-    <ReleaseNotes>https://github.com/elucidsoft/dotnet-stellar-sdk/releases</ReleaseNotes>
+    <PackageTags>'.NET Core' 'Kin' 'Horizon' 'Blockchain' 'Crypto' 'Distributed Ledger'</PackageTags>
+    <ReleaseNotes>https://github.com/kinecosystem/kin-base-csharp/releases</ReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

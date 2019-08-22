@@ -1,4 +1,4 @@
-namespace stellar_dotnet_sdk.responses.results
+namespace kin_base.responses.results
 {
     /// <summary>
     /// Source account has <c>AUTH_IMMUTABLE</c> set.

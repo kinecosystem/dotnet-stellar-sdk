@@ -1,8 +1,8 @@
 ﻿using System;
-using stellar_dotnet_sdk.xdr;
-using sdkxdr = stellar_dotnet_sdk.xdr;
+using kin_base.xdr;
+using sdkxdr = kin_base.xdr;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     /// <summary>
     /// Represents a <see cref="PathPaymentOp"/>.
@@ -125,8 +125,8 @@ namespace stellar_dotnet_sdk
             ///     Sets path for this operation
             ///     <param name="path">
             ///         The assets (other than send asset and destination asset) involved in the offers the path takes.
-            ///         For example, if you can only find a path from USD to EUR through XLM and BTC, the path would be USD -&raquo;
-            ///         XLM -&raquo; BTC -&raquo; EUR and the path field would contain XLM and BTC.
+            ///         For example, if you can only find a path from USD to EUR through KIN and BTC, the path would be USD -&raquo;
+            ///         KIN -&raquo; BTC -&raquo; EUR and the path field would contain KIN and BTC.
             ///     </param>
             ///     <returns>Builder object so you can chain methods</returns>
             ///     .

@@ -1,4 +1,4 @@
-namespace stellar_dotnet_sdk.responses.results
+namespace kin_base.responses.results
 {
     /// <summary>
     /// Can't receive more of what it's buying.

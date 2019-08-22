@@ -3,7 +3,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     public static class Util
     {

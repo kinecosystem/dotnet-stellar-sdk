@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using stellar_dotnet_sdk.requests;
+using kin_base.requests;
 
-namespace stellar_dotnet_sdk.responses
+namespace kin_base.responses
 {
     public class Link
     {

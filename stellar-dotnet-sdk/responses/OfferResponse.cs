@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
-using stellar_dotnet_sdk.requests;
+using kin_base.requests;
 
-namespace stellar_dotnet_sdk.responses
+namespace kin_base.responses
 {
     /// <summary>
     /// Represents offer response.

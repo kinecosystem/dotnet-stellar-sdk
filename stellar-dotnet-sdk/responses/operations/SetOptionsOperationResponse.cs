@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace stellar_dotnet_sdk.responses.operations
+namespace kin_base.responses.operations
 {
     /// <inheritdoc />
     /// <summary>

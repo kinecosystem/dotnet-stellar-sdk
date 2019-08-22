@@ -5,9 +5,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Nett;
-using stellar_dotnet_sdk.requests;
+using kin_base.requests;
 
-namespace stellar_dotnet_sdk.federation
+namespace kin_base.federation
 {
     /// <summary>
     ///     FederationServer handles a network connection to a

@@ -1,4 +1,4 @@
-﻿namespace stellar_dotnet_sdk.responses.page
+﻿namespace kin_base.responses.page
 {
     /// <summary>
     ///     Links connected to page response.

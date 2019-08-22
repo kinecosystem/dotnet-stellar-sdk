@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace stellar_dotnet_sdk.responses.results
+namespace kin_base.responses.results
 {
     public class PathPaymentResult : OperationResult
     {

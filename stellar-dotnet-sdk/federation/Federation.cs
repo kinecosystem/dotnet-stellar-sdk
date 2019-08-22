@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace stellar_dotnet_sdk.federation
+namespace kin_base.federation
 {
     public static class Federation
     {

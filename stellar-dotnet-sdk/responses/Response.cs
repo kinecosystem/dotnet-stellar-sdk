@@ -2,7 +2,7 @@
 using System.Net.Http.Headers;
 using Newtonsoft.Json;
 
-namespace stellar_dotnet_sdk.responses
+namespace kin_base.responses
 {
     [JsonObject(MemberSerialization.OptIn)]
     public abstract class Response

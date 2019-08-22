@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace stellar_dotnet_sdk.responses.effects
+namespace kin_base.responses.effects
 {
     /// <summary>
     ///     Represents account_home_domain_updated effect response.

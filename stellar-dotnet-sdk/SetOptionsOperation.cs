@@ -1,8 +1,8 @@
 ﻿using System;
-using stellar_dotnet_sdk.xdr;
-using sdkxdr = stellar_dotnet_sdk.xdr;
+using kin_base.xdr;
+using sdkxdr = kin_base.xdr;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     /// <summary>
     /// Represents a <see cref="SetOptionsOp"/>.
@@ -282,7 +282,7 @@ namespace stellar_dotnet_sdk
             /// <summary>
             ///     Add, update, or remove a signer from the account. Signer is deleted if the weight = 0;
             /// </summary>
-            /// <param name="signer">The signer key. Use <see cref="stellar_dotnet_sdk.Signer" /> helper to create this object.</param>
+            /// <param name="signer">The signer key. Use <see cref="kin_base.Signer" /> helper to create this object.</param>
             /// <param name="weight">The weight to attach to the signer (0-255).</param>
             /// <returns>Builder object so you can chain methods.</returns>
             public Builder SetSigner(sdkxdr.SignerKey signer, int? weight)

@@ -1,4 +1,4 @@
-namespace stellar_dotnet_sdk.responses.results
+namespace kin_base.responses.results
 {
     /// <summary>
     /// Can't add source balance to destination balance.

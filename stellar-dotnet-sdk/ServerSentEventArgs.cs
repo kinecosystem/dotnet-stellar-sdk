@@ -5,7 +5,7 @@
 
 using System;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     public sealed partial class EventSource
     {

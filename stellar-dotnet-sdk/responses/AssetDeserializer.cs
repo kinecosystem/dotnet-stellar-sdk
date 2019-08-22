@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 
-namespace stellar_dotnet_sdk.responses
+namespace kin_base.responses
 {
     public class AssetDeserializer : JsonConverter<Asset>
     {

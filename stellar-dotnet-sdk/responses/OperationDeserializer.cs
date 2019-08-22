@@ -1,9 +1,9 @@
 ﻿using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using stellar_dotnet_sdk.responses.operations;
+using kin_base.responses.operations;
 
-namespace stellar_dotnet_sdk.responses
+namespace kin_base.responses
 {
     public class OperationDeserializer : JsonConverter<OperationResponse>
     {

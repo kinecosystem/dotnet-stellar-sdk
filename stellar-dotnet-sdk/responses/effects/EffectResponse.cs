@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json;
 using System;
-using stellar_dotnet_sdk.responses.operations;
+using kin_base.responses.operations;
 
-namespace stellar_dotnet_sdk.responses.effects
+namespace kin_base.responses.effects
 {
     [JsonConverter(typeof(EffectDeserializer))]
     public abstract class EffectResponse : Response, IPagingToken

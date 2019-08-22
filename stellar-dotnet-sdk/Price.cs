@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Globalization;
 using Newtonsoft.Json;
-using sdkxdr = stellar_dotnet_sdk.xdr;
+using sdkxdr = kin_base.xdr;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     public class Price
     {

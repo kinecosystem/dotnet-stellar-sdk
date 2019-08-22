@@ -1,8 +1,8 @@
 ﻿using System;
-using stellar_dotnet_sdk.xdr;
-using Int64 = stellar_dotnet_sdk.xdr.Int64;
+using kin_base.xdr;
+using Int64 = kin_base.xdr.Int64;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     /// <summary>
     /// Represents a <see cref="CreateAccountOp"/>.
@@ -20,7 +20,7 @@ namespace stellar_dotnet_sdk
         /// Result: <see cref="CreateAccountResult"/>
         /// </remarks>
         /// <param name="destination">Destination account ID to create an account for.</param>
-        /// <param name="startingBalance">Amount in XLM the account should be funded for. Must be greater than the <see href="https://www.stellar.org/developers/guides/concepts/fees.html">reserve balance amount.</see></param>
+        /// <param name="startingBalance">Amount in KIN the account should be funded for. Must be greater than the <see href="https://www.stellar.org/developers/guides/concepts/fees.html">reserve balance amount.</see></param>
         public CreateAccountOperation(KeyPair destination, string startingBalance)
         {
             Destination = destination ?? throw new ArgumentNullException(nameof(destination), "destination cannot be null");

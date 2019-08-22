@@ -1,4 +1,4 @@
-namespace stellar_dotnet_sdk.responses
+namespace kin_base.responses
 {
     /// <summary>
     /// Fee would bring account below reserve.

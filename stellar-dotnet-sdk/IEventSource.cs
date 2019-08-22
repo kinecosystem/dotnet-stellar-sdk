@@ -2,7 +2,7 @@
 using System.Collections.Specialized;
 using System.Threading.Tasks;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     public interface IEventSource
     {

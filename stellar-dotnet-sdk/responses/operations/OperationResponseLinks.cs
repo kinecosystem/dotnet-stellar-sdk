@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json;
-using stellar_dotnet_sdk.responses.effects;
-using stellar_dotnet_sdk.responses.page;
+using kin_base.responses.effects;
+using kin_base.responses.page;
 
-namespace stellar_dotnet_sdk.responses.operations
+namespace kin_base.responses.operations
 {
     /// <summary>
     /// The response is for the genesis ledger of the Stellar network, and the links in the _links attribute provide links to other relavant resources in Horizon.

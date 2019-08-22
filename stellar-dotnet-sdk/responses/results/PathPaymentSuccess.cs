@@ -1,4 +1,4 @@
-namespace stellar_dotnet_sdk.responses.results
+namespace kin_base.responses.results
 {
     /// <summary>
     /// Operation successful.
@@ -29,7 +29,7 @@ namespace stellar_dotnet_sdk.responses.results
                 {
                     Destination = KeyPair.FromXdrPublicKey(result.Destination.InnerValue),
                     Asset = Asset.FromXdr(result.Asset),
-                    Amount = stellar_dotnet_sdk.Amount.FromXdr(result.Amount.InnerValue)
+                    Amount = kin_base.Amount.FromXdr(result.Amount.InnerValue)
                 };
             }
         }

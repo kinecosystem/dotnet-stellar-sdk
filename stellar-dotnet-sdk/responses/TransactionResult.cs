@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using stellar_dotnet_sdk.responses.results;
+using kin_base.responses.results;
 
-namespace stellar_dotnet_sdk.responses
+namespace kin_base.responses
 {
     public class TransactionResult
     {

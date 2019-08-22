@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace stellar_dotnet_sdk.responses.effects
+namespace kin_base.responses.effects
 {
     public abstract class TrustlineCUDResponse : EffectResponse
     {

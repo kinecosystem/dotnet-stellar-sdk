@@ -15,7 +15,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     /// <inheritdoc />
     /// <summary>

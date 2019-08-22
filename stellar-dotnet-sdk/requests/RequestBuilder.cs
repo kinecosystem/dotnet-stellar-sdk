@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
-using stellar_dotnet_sdk.responses.operations;
+using kin_base.responses.operations;
 
-namespace stellar_dotnet_sdk.requests
+namespace kin_base.requests
 {
     public enum OrderDirection
     {

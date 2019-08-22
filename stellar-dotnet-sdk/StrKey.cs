@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     public class StrKey
     {

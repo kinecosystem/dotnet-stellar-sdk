@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     [Serializable]
     internal class TooManySignaturesException : Exception

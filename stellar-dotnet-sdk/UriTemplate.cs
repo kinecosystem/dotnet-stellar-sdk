@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
-using stellar_dotnet_sdk.requests;
+using kin_base.requests;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     /// <summary>
     /// Partial implement of the Uri Template Spec (RFC 6570).

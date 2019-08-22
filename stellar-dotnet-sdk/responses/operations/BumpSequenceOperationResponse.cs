@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace stellar_dotnet_sdk.responses.operations
+namespace kin_base.responses.operations
 {
     /// <summary>
     /// Represents AccountMerge operation response.

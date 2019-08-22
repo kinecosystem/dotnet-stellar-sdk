@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
-using stellar_dotnet_sdk.responses.operations;
+using kin_base.responses.operations;
 
-namespace stellar_dotnet_sdk.responses
+namespace kin_base.responses
 {
     public class TradeResponseLinks
     {

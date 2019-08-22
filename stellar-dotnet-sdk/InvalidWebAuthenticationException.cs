@@ -1,6 +1,6 @@
 using System;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     /// <summary>
     /// Exception thrown when WebAuthentication verification fails.

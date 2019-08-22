@@ -1,7 +1,7 @@
 ﻿using System;
-using sdkxdr = stellar_dotnet_sdk.xdr;
+using sdkxdr = kin_base.xdr;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     /// <summary>
     /// Represents a <see cref="CreatePassiveSellOfferOp"/>.
@@ -35,7 +35,7 @@ namespace stellar_dotnet_sdk
             var amount = new sdkxdr.Int64();
             amount.InnerValue = ToXdrAmount(Amount);
             op.Amount = amount;
-            var price = stellar_dotnet_sdk.Price.FromString(Price);
+            var price = kin_base.Price.FromString(Price);
             op.Price = price.ToXdr();
 
             var body = new sdkxdr.Operation.OperationBody();
@@ -70,7 +70,7 @@ namespace stellar_dotnet_sdk
                 _Amount = FromXdrAmount(op.Amount.InnerValue);
                 var n = new decimal(op.Price.N.InnerValue);
                 var d = new decimal(op.Price.D.InnerValue);
-                _Price = stellar_dotnet_sdk.Amount.DecimalToString(decimal.Divide(n, d));
+                _Price = kin_base.Amount.DecimalToString(decimal.Divide(n, d));
             }
 
             /// <summary>

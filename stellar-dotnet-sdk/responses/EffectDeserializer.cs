@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using stellar_dotnet_sdk.responses.effects;
+using kin_base.responses.effects;
 
-namespace stellar_dotnet_sdk.responses
+namespace kin_base.responses
 {
     public class EffectDeserializer : JsonConverter<EffectResponse>
     {

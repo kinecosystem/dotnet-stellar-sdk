@@ -1,11 +1,11 @@
 ﻿using System.Linq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using stellar_dotnet_sdk.responses.effects;
-using stellar_dotnet_sdk.responses.operations;
-using stellar_dotnet_sdk.responses.page;
+using kin_base.responses.effects;
+using kin_base.responses.operations;
+using kin_base.responses.page;
 
-namespace stellar_dotnet_sdk.responses
+namespace kin_base.responses
 {
     public static class JsonSingleton
     {

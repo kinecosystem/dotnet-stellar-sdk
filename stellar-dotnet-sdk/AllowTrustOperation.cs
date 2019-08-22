@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text;
-using stellar_dotnet_sdk.xdr;
-using sdkxdr = stellar_dotnet_sdk.xdr;
+using kin_base.xdr;
+using sdkxdr = kin_base.xdr;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     /// <summary>
     /// Represents a <see cref="AllowTrustOp"/>.

@@ -1,4 +1,4 @@
-namespace stellar_dotnet_sdk.responses.results
+namespace kin_base.responses.results
 {
     /// <summary>
     /// Operation successful.
@@ -28,7 +28,7 @@ namespace stellar_dotnet_sdk.responses.results
             {
                 return new InflationPayout
                 {
-                    Amount = stellar_dotnet_sdk.Amount.FromXdr(payout.Amount.InnerValue),
+                    Amount = kin_base.Amount.FromXdr(payout.Amount.InnerValue),
                     Destination = KeyPair.FromXdrPublicKey(payout.Destination.InnerValue)
                 };
             }

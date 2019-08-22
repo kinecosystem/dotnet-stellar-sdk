@@ -1,12 +1,12 @@
 ﻿using dotnetstandard_bip32;
-using stellar_dotnet_sdk.xdr;
+using kin_base.xdr;
 using System;
 using System.Linq;
 using System.Security.Cryptography;
 using NSec.Cryptography;
-using PublicKey = stellar_dotnet_sdk.xdr.PublicKey;
+using PublicKey = kin_base.xdr.PublicKey;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     /// <summary>
     /// <see cref="KeyPair"/> represents public (and secret) keys of the account.

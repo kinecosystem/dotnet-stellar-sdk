@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace stellar_dotnet_sdk.responses.effects
+namespace kin_base.responses.effects
 {
     /// <summary>
     ///     Represents account_credited effect response.

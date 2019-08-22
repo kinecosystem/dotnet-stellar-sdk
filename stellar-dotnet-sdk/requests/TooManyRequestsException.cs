@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace stellar_dotnet_sdk.requests
+namespace kin_base.requests
 {
     public class TooManyRequestsException : Exception
     {

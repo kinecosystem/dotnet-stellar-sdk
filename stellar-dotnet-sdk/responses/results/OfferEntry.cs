@@ -1,6 +1,6 @@
 using System;
 
-namespace stellar_dotnet_sdk.responses.results
+namespace kin_base.responses.results
 {
     /// <summary>
     /// An offer is the building block of the offer book, they are automatically
@@ -62,7 +62,7 @@ namespace stellar_dotnet_sdk.responses.results
                 OfferId = entry.OfferID.InnerValue,
                 Selling = Asset.FromXdr(entry.Selling),
                 Buying = Asset.FromXdr(entry.Buying),
-                Amount = stellar_dotnet_sdk.Amount.FromXdr(entry.Amount.InnerValue),
+                Amount = kin_base.Amount.FromXdr(entry.Amount.InnerValue),
                 Price = Price.FromXdr(entry.Price),
                 Flags = FlagsFromXdr(entry.Flags.InnerValue)
             };

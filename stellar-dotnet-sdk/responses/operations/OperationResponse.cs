@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using Newtonsoft.Json;
 
-namespace stellar_dotnet_sdk.responses.operations
+namespace kin_base.responses.operations
 {
     /// <summary>
     /// Abstract class for operation responses.

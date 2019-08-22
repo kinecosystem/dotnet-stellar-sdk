@@ -1,7 +1,7 @@
 ﻿using System;
-using stellar_dotnet_sdk.xdr;
+using kin_base.xdr;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     public class MemoId : Memo
     {

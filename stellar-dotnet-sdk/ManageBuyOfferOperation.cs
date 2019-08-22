@@ -1,8 +1,8 @@
 using System;
-using stellar_dotnet_sdk.xdr;
-using sdkxdr = stellar_dotnet_sdk.xdr;
+using kin_base.xdr;
+using sdkxdr = kin_base.xdr;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     /// <summary>
     /// Represents a <see cref="ManageBuyOfferOp"/>.
@@ -37,7 +37,7 @@ namespace stellar_dotnet_sdk
             var op = new sdkxdr.ManageBuyOfferOp() {Selling = Selling.ToXdr(), Buying = Buying.ToXdr()};
             var amount = new sdkxdr.Int64 {InnerValue = ToXdrAmount(BuyAmount)};
             op.BuyAmount = amount;
-            var price = stellar_dotnet_sdk.Price.FromString(Price);
+            var price = kin_base.Price.FromString(Price);
             op.Price = price.ToXdr();
             var offerId = new sdkxdr.Int64 {InnerValue = OfferId};
             op.OfferID = offerId;

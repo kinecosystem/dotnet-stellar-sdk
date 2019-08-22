@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Net.Http;
-using stellar_dotnet_sdk.responses;
-using stellar_dotnet_sdk.responses.page;
+using kin_base.responses;
+using kin_base.responses.page;
 
-namespace stellar_dotnet_sdk.requests
+namespace kin_base.requests
 {
     public class RequestBuilderStreamable<T, TResponse> : RequestBuilderExecutePageable<T, TResponse> where T : class where TResponse : class
     {

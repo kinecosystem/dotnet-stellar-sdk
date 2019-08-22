@@ -1,8 +1,8 @@
 ﻿using System;
-using stellar_dotnet_sdk.xdr;
-using Int64 = stellar_dotnet_sdk.xdr.Int64;
+using kin_base.xdr;
+using Int64 = kin_base.xdr.Int64;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     /// <summary>
     /// Represents a <see cref="PaymentOp"/> operation.

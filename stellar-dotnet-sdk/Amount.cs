@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     public static class Amount
     {

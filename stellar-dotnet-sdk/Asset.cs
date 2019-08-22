@@ -1,11 +1,11 @@
 ﻿using System;
-using stellar_dotnet_sdk.xdr;
+using kin_base.xdr;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     /// <summary>
-    /// Asset class represents an asset, either the native asset (XLM) or a asset code / issuer account ID pair.
-    /// An asset code describes an asset code and issuer pair. In the case of the native asset XLM, the issuer will be null.
+    /// Asset class represents an asset, either the native asset (KIN) or a asset code / issuer account ID pair.
+    /// An asset code describes an asset code and issuer pair. In the case of the native asset KIN, the issuer will be null.
     /// </summary>
     public abstract class Asset
     {

@@ -2,7 +2,7 @@ using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace stellar_dotnet_sdk.responses
+namespace kin_base.responses
 {
     // We have to use reflection because Newtonsoft.Json does not support generic JsonConverters
     // https://github.com/JamesNK/Newtonsoft.Json/issues/1332

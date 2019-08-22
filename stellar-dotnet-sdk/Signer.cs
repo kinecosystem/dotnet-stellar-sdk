@@ -1,7 +1,7 @@
 ﻿using System;
-using sdkxdr = stellar_dotnet_sdk.xdr;
+using sdkxdr = kin_base.xdr;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     /// <summary>
     ///     Signer is a helper class that creates <see cref="sdkxdr.SignerKey" /> objects.

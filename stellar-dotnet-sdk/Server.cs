@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Reflection;
 using System.Threading.Tasks;
-using stellar_dotnet_sdk.requests;
-using stellar_dotnet_sdk.responses;
+using kin_base.requests;
+using kin_base.responses;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     public class Server : IDisposable
     {

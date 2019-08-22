@@ -1,4 +1,4 @@
-namespace stellar_dotnet_sdk.responses.operations
+namespace kin_base.responses.operations
 {
     public class ManageBuyOfferOperationResponse : ManageOfferOperationResponse
     {

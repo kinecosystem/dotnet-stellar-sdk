@@ -1,8 +1,8 @@
 using System;
 using System.Linq;
-using stellar_dotnet_sdk.xdr;
+using kin_base.xdr;
 
-namespace stellar_dotnet_sdk.responses.results
+namespace kin_base.responses.results
 {
     /// <summary>
     /// Operation successful.

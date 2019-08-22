@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Web;
 
-namespace stellar_dotnet_sdk
+namespace kin_base
 {
     public static class UriBuilderExtensions
     {
