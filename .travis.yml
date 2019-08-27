@@ -5,7 +5,7 @@ mono:
   - 6.0.0
 
 dotnet:
-  -  2.2.6
+  - 2.2
 
 script:
   - make test
