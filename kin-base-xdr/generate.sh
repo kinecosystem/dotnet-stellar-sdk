@@ -1,0 +1,1 @@
+xdrgen -o ./generated *.x --language=csharp --namespace=kin_base.xdr

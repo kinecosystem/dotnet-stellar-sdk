@@ -1,0 +1,10 @@
+namespace kin_base.responses
+{
+    /// <summary>
+    /// Too few valid signatures or invalid network.
+    /// </summary>
+    public class TransactionResultBadAuth : TransactionResult
+    {
+        public override bool IsSuccess => false;
+    }
+}
