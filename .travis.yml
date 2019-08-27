@@ -1,7 +1,13 @@
 language: csharp
 solution: kin-base-csharp.sln
 
-dist: xenial
+matrix:
+  include:
+    - os: linux
+      dist: xenial
+    - os: osx
+    - os: windows
+
 dotnet: 2.2
 
 script:
