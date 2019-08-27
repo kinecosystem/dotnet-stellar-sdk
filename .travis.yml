@@ -4,6 +4,9 @@ solution: kin-base-csharp.sln
 mono:
   - 6.0.0
 
+dotnet:
+  -  2.2.6
+
 script:
   - make test
 
