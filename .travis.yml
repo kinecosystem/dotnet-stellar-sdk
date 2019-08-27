@@ -1,12 +1,11 @@
 language: csharp
 solution: kin-base-csharp.sln
 
-mono:
-  - 6.0.0
-
 dist: xenial
 dotnet: 2.2
 
 script:
   - make test
 
+notifications:
+  email: false
