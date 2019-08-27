@@ -351,10 +351,10 @@ namespace kin_base
             }
 
             /// <summary>
-            ///     Set the transaction fee (in Stroops) per operation.
+            ///     Set the transaction fee (in Quarks) per operation.
             ///     See: https://www.stellar.org/developers/learn/concepts/transactions.html
             /// </summary>
-            /// <param name="fee">fee (in Stroops) for each operation in the transaction</param>
+            /// <param name="fee">fee (in Quarks) for each operation in the transaction</param>
             /// <returns>Builder object so you can chain methods.</returns>
             public Builder SetFee(int fee)
             {

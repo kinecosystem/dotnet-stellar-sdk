@@ -111,7 +111,7 @@ namespace kin_base_test
             var response = await server.SubmitTransaction(BuildTransaction());
 
             Assert.IsTrue(response.IsSuccess());
-            Assert.AreEqual("stellar-dotnet-sdk", clientName);
+            Assert.AreEqual("kin-base", clientName);
             Assert.IsFalse(string.IsNullOrWhiteSpace(clientVersion));
             var result = response.Result;
             Assert.IsInstanceOfType(result, typeof(TransactionResultSuccess));

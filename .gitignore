@@ -37,5 +37,5 @@ package/lib/
 # Visual Studio 2015
 .vs/
 *.DotSettings
-.idea/.idea.stellar-dotnetcore-sdk/.idea/workspace.xml
-stellar-dotnet-sdk-test/coverage.opencover.xml
+.idea/.idea.kin-base/.idea/workspace.xml
+kin-base-test/coverage.opencover.xml
