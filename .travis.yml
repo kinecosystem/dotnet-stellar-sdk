@@ -1,6 +1,8 @@
 language: csharp
 solution: kin-base-csharp.sln
 
+mono: none
+
 matrix:
   include:
     - os: linux
@@ -8,7 +10,7 @@ matrix:
     - os: osx
     - os: windows
 
-dotnet: 2.2
+dotnet: 2.2.401
 
 script:
   - make test
