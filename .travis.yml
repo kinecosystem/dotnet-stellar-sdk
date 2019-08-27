@@ -1,0 +1,9 @@
+language: csharp
+solution: kin-base-csharp.sln
+
+mono:
+  - 6.0.0
+
+script:
+  - make test
+
