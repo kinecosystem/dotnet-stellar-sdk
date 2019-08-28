@@ -18,7 +18,8 @@ namespace kin_base_test
         [TestInitialize]
         public void Initialize()
         {
-            Network.UseTestNetwork();
+            Network OriginalTestNetwork = new Network("Test SDF Network ; September 2015");
+            Network.Use(OriginalTestNetwork);
         }
 
         [TestCleanup]
@@ -37,7 +38,7 @@ namespace kin_base_test
             var sequenceNumber = 2908908335136768L;
             var account = new Account(source.AccountId, sequenceNumber);
             var transaction = new Transaction.Builder(account)
-                .AddOperation(new CreateAccountOperation.Builder(destination, "2000").Build())
+                .AddOperation(new CreateAccountOperation.Builder(destination, "200000").Build())
                 .Build();
 
             transaction.Sign(source);
@@ -77,7 +78,7 @@ namespace kin_base_test
 
             var account = new Account(source.AccountId, 2908908335136768);
             var transaction = new Transaction.Builder(account)
-                .AddOperation(new CreateAccountOperation.Builder(destination, "2000").Build())
+                .AddOperation(new CreateAccountOperation.Builder(destination, "200000").Build())
                 .AddMemo(Memo.Text("Hello world!"))
                 .Build();
 
@@ -108,7 +109,7 @@ namespace kin_base_test
 
             var account = new Account(source.AccountId, 2908908335136768L);
             var transaction = new Transaction.Builder(account)
-                .AddOperation(new CreateAccountOperation.Builder(destination, "2000").Build())
+                .AddOperation(new CreateAccountOperation.Builder(destination, "200000").Build())
                 .AddTimeBounds(new TimeBounds(42, 1337))
                 .AddMemo(Memo.Hash("abcdef"))
                 .Build();
@@ -146,8 +147,8 @@ namespace kin_base_test
 
             var account = new Account(source.AccountId, 2908908335136768L);
             var transaction = new Transaction.Builder(account)
-                .AddOperation(new CreateAccountOperation.Builder(destination, "2000").Build())
-                .AddOperation(new CreateAccountOperation.Builder(destination, "2000").Build())
+                .AddOperation(new CreateAccountOperation.Builder(destination, "200000").Build())
+                .AddOperation(new CreateAccountOperation.Builder(destination, "200000").Build())
                 .SetFee(173)
                 .Build();
 
@@ -179,7 +180,8 @@ namespace kin_base_test
         [TestMethod]
         public void TestBuilderSuccessPublic()
         {
-            Network.UsePublicNetwork();
+            Network OriginalPublicNetwork = new Network("Public Global Stellar Network ; September 2015");
+            Network.Use(OriginalPublicNetwork);
 
             // GBPMKIRA2OQW2XZZQUCQILI5TMVZ6JNRKM423BSAISDM7ZFWQ6KWEBC4
             var source = KeyPair.FromSecretSeed("SCH27VUZZ6UAKB67BDNF6FA42YMBMQCBKXWGMFD5TZ6S5ZZCZFLRXKHS");
@@ -187,7 +189,7 @@ namespace kin_base_test
 
             var account = new Account(source.AccountId, 2908908335136768L);
             var transaction = new Transaction.Builder(account)
-                .AddOperation(new CreateAccountOperation.Builder(destination, "2000").Build())
+                .AddOperation(new CreateAccountOperation.Builder(destination, "200000").Build())
                 .Build();
 
             transaction.Sign(source);
@@ -200,14 +202,15 @@ namespace kin_base_test
         [TestMethod]
         public void TestSha256HashSigning()
         {
-            Network.UsePublicNetwork();
+            Network OriginalPublicNetwork = new Network("Public Global Stellar Network ; September 2015");
+            Network.Use(OriginalPublicNetwork);
 
             var source = KeyPair.FromAccountId("GBBM6BKZPEHWYO3E3YKREDPQXMS4VK35YLNU7NFBRI26RAN7GI5POFBB");
             var destination = KeyPair.FromAccountId("GDJJRRMBK4IWLEPJGIE6SXD2LP7REGZODU7WDC3I2D6MR37F4XSHBKX2");
 
             var account = new Account(source.AccountId, 0L);
             var transaction = new Transaction.Builder(account)
-                .AddOperation(new PaymentOperation.Builder(destination, new AssetTypeNative(), "2000").Build())
+                .AddOperation(new PaymentOperation.Builder(destination, new AssetTypeNative(), "200000").Build())
                 .Build();
 
             var preimage = new byte[64];
@@ -236,7 +239,7 @@ namespace kin_base_test
 
             var account = new Account(source.AccountId, 2908908335136768L);
             var transaction = new Transaction.Builder(account)
-                .AddOperation(new CreateAccountOperation.Builder(destination, "2000").Build())
+                .AddOperation(new CreateAccountOperation.Builder(destination, "200000").Build())
                 .Build();
 
             try
@@ -259,7 +262,7 @@ namespace kin_base_test
 
             var account = new Account(source.AccountId, 2908908335136768L);
             var transaction = new Transaction.Builder(account)
-                .AddOperation(new CreateAccountOperation.Builder(destination, "2000").Build())
+                .AddOperation(new CreateAccountOperation.Builder(destination, "200000").Build())
                 .Build();
             try
             {
@@ -280,7 +283,7 @@ namespace kin_base_test
 
             var account = new Account(source.AccountId, 2908908335136768L);
             var transaction = new Transaction.Builder(account)
-                .AddOperation(new CreateAccountOperation.Builder(destination, "2000").Build())
+                .AddOperation(new CreateAccountOperation.Builder(destination, "200000").Build())
                 .Build();
             try
             {
@@ -322,7 +325,7 @@ namespace kin_base_test
             {
                 var account = new Account(source.AccountId, 2908908335136768L);
                 new Transaction.Builder(account)
-                    .AddOperation(new CreateAccountOperation.Builder(destination, "2000").Build())
+                    .AddOperation(new CreateAccountOperation.Builder(destination, "200000").Build())
                     .AddMemo(Memo.None())
                     .AddMemo(Memo.None());
                 Assert.Fail();
@@ -342,18 +345,20 @@ namespace kin_base_test
             var sequenceNumber = 2908908335136768L;
             var account = new Account(source.AccountId, sequenceNumber);
             var transaction = new Transaction.Builder(account)
-                .AddOperation(new CreateAccountOperation.Builder(destination, "2000").Build())
+                .AddOperation(new CreateAccountOperation.Builder(destination, "200000").Build())
                 .Build();
 
-            Network.UsePublicNetwork();
+            Network OriginalPublicNetwork = new Network("Public Global Stellar Network ; September 2015");
+            Network.Use(OriginalPublicNetwork);
             var publicNetworkHash = transaction.Hash();
 
-            Network.UseTestNetwork();
+            Network OriginalTestNetwork = new Network("Test SDF Network ; September 2015");
+            Network.Use(OriginalTestNetwork);;
             var testNetworkHash = transaction.Hash();
 
             Assert.IsFalse(testNetworkHash.SequenceEqual(publicNetworkHash));
 
-            var network = Network.Public();
+            var network = OriginalPublicNetwork;
             var explicitPublicNetworkHash = transaction.Hash(network);
 
             Assert.IsTrue(publicNetworkHash.SequenceEqual(explicitPublicNetworkHash));
@@ -364,7 +369,7 @@ namespace kin_base_test
         {
             var response = new AccountResponse("GDW6AUTBXTOC7FIKUO5BOO3OGLK4SF7ZPOBLMQHMZDI45J2Z6VXRB5NR", 123);
             var transaction = new Transaction.Builder(response)
-                .AddOperation(new CreateAccountOperation.Builder(response.KeyPair, "2000").Build())
+                .AddOperation(new CreateAccountOperation.Builder(response.KeyPair, "200000").Build())
                 .Build();
 
             Assert.IsNotNull(transaction);

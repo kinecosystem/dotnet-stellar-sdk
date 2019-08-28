@@ -14,7 +14,7 @@ namespace kin_base_test.responses.results
                 typeof(AccountMergeSuccess), true);
             var failed = (TransactionResultFailed) tx;
             var op = (AccountMergeSuccess) failed.Results[0];
-            Assert.AreEqual("10", op.SourceAccountBalance);
+            Assert.AreEqual("1000", op.SourceAccountBalance);
         }
 
         [TestMethod]

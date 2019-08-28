@@ -5,8 +5,8 @@ namespace kin_base
 {
     public class Network
     {
-        public static readonly string PublicPassphrase = "Public Global Stellar Network ; September 2015";
-        public static readonly string TestnetPassphrase = "Test SDF Network ; September 2015";
+        public const string PublicPassphrase = "Kin Mainnet ; December 2018";
+        public const string TestnetPassphrase = "Kin Testnet ; December 2018";
 
         public Network(string networkPassphrase)
         {

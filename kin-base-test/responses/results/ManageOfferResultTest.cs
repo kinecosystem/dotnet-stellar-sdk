@@ -24,7 +24,7 @@ namespace kin_base_test.responses.results
             Assert.AreEqual(
                 Asset.CreateNonNativeAsset("USD", "GAVIGRVSL424MPYD6F6J5EZSTFORXESTMKEJUEPEII7BAWQ25BR25DUC"),
                 offer.Buying);
-            Assert.AreEqual("1", offer.Amount);
+            Assert.AreEqual("100", offer.Amount);
             Assert.AreEqual(new Price(1000, 4376), offer.Price);
 
             Assert.AreEqual(1, op.OffersClaimed.Length);
@@ -45,7 +45,7 @@ namespace kin_base_test.responses.results
             Assert.AreEqual(
                 Asset.CreateNonNativeAsset("USD", "GAVIGRVSL424MPYD6F6J5EZSTFORXESTMKEJUEPEII7BAWQ25BR25DUC"),
                 offer.Buying);
-            Assert.AreEqual("1", offer.Amount);
+            Assert.AreEqual("100", offer.Amount);
             Assert.AreEqual(new Price(1000, 4376), offer.Price);
 
             Assert.AreEqual(1, op.OffersClaimed.Length);

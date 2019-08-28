@@ -10,7 +10,7 @@ namespace kin_base_test.responses
         public void TestTooEarly()
         {
             var result = TransactionResult.FromXdr("AAAAAAAPQkD////+AAAAAA==");
-            Assert.AreEqual("0.1", result.FeeCharged);
+            Assert.AreEqual("10", result.FeeCharged);
             Assert.IsInstanceOfType(result, typeof(TransactionResultTooEarly));
         }
 
@@ -18,7 +18,7 @@ namespace kin_base_test.responses
         public void TestTooLate()
         {
             var result = TransactionResult.FromXdr("AAAAAAAPQkD////9AAAAAA==");
-            Assert.AreEqual("0.1", result.FeeCharged);
+            Assert.AreEqual("10", result.FeeCharged);
             Assert.IsInstanceOfType(result, typeof(TransactionResultTooLate));
         }
 
@@ -26,7 +26,7 @@ namespace kin_base_test.responses
         public void TestMissingOperation()
         {
             var result = TransactionResult.FromXdr(" AAAAAAAPQkD////8AAAAAA==");
-            Assert.AreEqual("0.1", result.FeeCharged);
+            Assert.AreEqual("10", result.FeeCharged);
             Assert.IsInstanceOfType(result, typeof(TransactionResultMissingOperation));
         }
 
@@ -34,7 +34,7 @@ namespace kin_base_test.responses
         public void TestBadSeq()
         {
             var result = TransactionResult.FromXdr("AAAAAAAPQkD////7AAAAAA==");
-            Assert.AreEqual("0.1", result.FeeCharged);
+            Assert.AreEqual("10", result.FeeCharged);
             Assert.IsInstanceOfType(result, typeof(TransactionResultBadSeq));
         }
 
@@ -42,7 +42,7 @@ namespace kin_base_test.responses
         public void TestBadAuth()
         {
             var result = TransactionResult.FromXdr("AAAAAAAPQkD////6AAAAAA==");
-            Assert.AreEqual("0.1", result.FeeCharged);
+            Assert.AreEqual("10", result.FeeCharged);
             Assert.IsInstanceOfType(result, typeof(TransactionResultBadAuth));
         }
 
@@ -50,7 +50,7 @@ namespace kin_base_test.responses
         public void TestInsufficientBalance()
         {
             var result = TransactionResult.FromXdr("AAAAAAAPQkD////5AAAAAA==");
-            Assert.AreEqual("0.1", result.FeeCharged);
+            Assert.AreEqual("10", result.FeeCharged);
             Assert.IsInstanceOfType(result, typeof(TransactionResultInsufficientBalance));
         }
 
@@ -58,7 +58,7 @@ namespace kin_base_test.responses
         public void TestNoAccount()
         {
             var result = TransactionResult.FromXdr("AAAAAAAPQkD////4AAAAAA==");
-            Assert.AreEqual("0.1", result.FeeCharged);
+            Assert.AreEqual("10", result.FeeCharged);
             Assert.IsInstanceOfType(result, typeof(TransactionResultNoAccount));
         }
 
@@ -66,7 +66,7 @@ namespace kin_base_test.responses
         public void TestInsufficientFee()
         {
             var result = TransactionResult.FromXdr("AAAAAAAPQkD////3AAAAAA==");
-            Assert.AreEqual("0.1", result.FeeCharged);
+            Assert.AreEqual("10", result.FeeCharged);
             Assert.IsInstanceOfType(result, typeof(TransactionResultInsufficientFee));
         }
 
@@ -74,7 +74,7 @@ namespace kin_base_test.responses
         public void TestBadAuthExtra()
         {
             var result = TransactionResult.FromXdr("AAAAAAAPQkD////2AAAAAA==");
-            Assert.AreEqual("0.1", result.FeeCharged);
+            Assert.AreEqual("10", result.FeeCharged);
             Assert.IsInstanceOfType(result, typeof(TransactionResultBadAuthExtra));
         }
 
@@ -82,7 +82,7 @@ namespace kin_base_test.responses
         public void TestInternalError()
         {
             var result = TransactionResult.FromXdr("AAAAAAAPQkD////1AAAAAA==");
-            Assert.AreEqual("0.1", result.FeeCharged);
+            Assert.AreEqual("10", result.FeeCharged);
             Assert.IsInstanceOfType(result, typeof(TransactionResultInternalError));
         }
     }

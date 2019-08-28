@@ -5,7 +5,7 @@ namespace kin_base
 {
     public static class Amount
     {
-        private static readonly decimal ONE = new decimal(10000000);
+        private static readonly decimal ONE = new decimal(100000);
 
 
         public static string DecimalToString(decimal d)

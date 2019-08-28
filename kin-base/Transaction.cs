@@ -358,8 +358,8 @@ namespace kin_base
             /// <returns>Builder object so you can chain methods.</returns>
             public Builder SetFee(int fee)
             {
-                if (_fee <= 0)
-                    throw new ArgumentException("Fee must be a positive amount", nameof(fee));
+                if (_fee < 0)
+                    throw new ArgumentException("Fee cant be negative", nameof(fee));
 
                 _fee = fee;
 

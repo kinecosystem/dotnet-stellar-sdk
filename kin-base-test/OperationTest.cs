@@ -18,7 +18,7 @@ namespace kin_base_test
             // GDW6AUTBXTOC7FIKUO5BOO3OGLK4SF7ZPOBLMQHMZDI45J2Z6VXRB5NR
             var destination = KeyPair.FromSecretSeed("SDHZGHURAYXKU2KMVHPOXI6JG2Q4BSQUQCEOY72O3QQTCLR2T455PMII");
 
-            const string startingAmount = "1000";
+            const string startingAmount = "100000";
             var operation = new CreateAccountOperation.Builder(destination, startingAmount)
                 .SetSourceAccount(source)
                 .Build();
@@ -46,7 +46,7 @@ namespace kin_base_test
             var destination = KeyPair.FromSecretSeed("SDHZGHURAYXKU2KMVHPOXI6JG2Q4BSQUQCEOY72O3QQTCLR2T455PMII");
 
             Asset asset = new AssetTypeNative();
-            var amount = "1000";
+            var amount = "100000";
 
             var operation = new PaymentOperation.Builder(destination, asset, amount)
                 .SetSourceAccount(source)
@@ -83,9 +83,9 @@ namespace kin_base_test
             var pathIssuer2 = KeyPair.FromSecretSeed("SA64U7C5C7BS5IHWEPA7YWFN3Z6FE5L6KAMYUIT4AQ7KVTVLD23C6HEZ");
 
             Asset sendAsset = new AssetTypeNative();
-            var sendMax = "0.0001";
+            var sendMax = "0.01";
             Asset destAsset = new AssetTypeCreditAlphaNum4("USD", issuer.AccountId);
-            var destAmount = "0.0001";
+            var destAmount = "0.01";
             Asset[] path = {new AssetTypeCreditAlphaNum4("USD", pathIssuer1.AccountId), new AssetTypeCreditAlphaNum12("TESTTEST", pathIssuer2.AccountId)};
 
             var operation = new PathPaymentOperation.Builder(
@@ -129,9 +129,9 @@ namespace kin_base_test
             var unused = KeyPair.FromSecretSeed("SA64U7C5C7BS5IHWEPA7YWFN3Z6FE5L6KAMYUIT4AQ7KVTVLD23C6HEZ");
 
             Asset sendAsset = new AssetTypeNative();
-            var sendMax = "0.0001";
+            var sendMax = "0.01";
             Asset destAsset = new AssetTypeCreditAlphaNum4("USD", issuer.AccountId);
-            var destAmount = "0.0001";
+            var destAmount = "0.01";
 
             var operation = new PathPaymentOperation.Builder(
                     sendAsset, sendMax, destination, destAsset, destAmount)
@@ -164,7 +164,7 @@ namespace kin_base_test
             var source = KeyPair.FromSecretSeed("SC4CGETADVYTCR5HEAVZRB3DZQY5Y4J7RFNJTRA6ESMHIPEZUSTE2QDK");
 
             Asset asset = new AssetTypeNative();
-            var limit = "922337203685.4775807";
+            var limit = "92233720368547.75807";
 
             var operation = new ChangeTrustOperation.Builder(asset, limit)
                 .SetSourceAccount(source)
@@ -337,7 +337,8 @@ namespace kin_base_test
         [TestMethod]
         public void TestSetOptionsOperationPreAuthTxSigner()
         {
-            Network.UseTestNetwork();
+            Network OriginalTestNetwork = new Network("Test SDF Network ; September 2015");
+            Network.Use(OriginalTestNetwork);
 
             // GBPMKIRA2OQW2XZZQUCQILI5TMVZ6JNRKM423BSAISDM7ZFWQ6KWEBC4
             var source = KeyPair.FromSecretSeed("SCH27VUZZ6UAKB67BDNF6FA42YMBMQCBKXWGMFD5TZ6S5ZZCZFLRXKHS");
@@ -346,7 +347,7 @@ namespace kin_base_test
             var sequenceNumber = 2908908335136768L;
             var account = new Account(source.AccountId, sequenceNumber);
             var transaction = new Transaction.Builder(account)
-                .AddOperation(new CreateAccountOperation.Builder(destination, "2000").Build())
+                .AddOperation(new CreateAccountOperation.Builder(destination, "200000").Build())
                 .Build();
 
             // GC5SIC4E3V56VOHJ3OZAX5SJDTWY52JYI2AFK6PUGSXFVRJQYQXXZBZF
@@ -387,7 +388,7 @@ namespace kin_base_test
 
             Asset selling = new AssetTypeNative();
             var buying = Asset.CreateNonNativeAsset("USD", issuer.AccountId);
-            var amount = "0.00001";
+            var amount = "0.001";
             var price = "0.85334384"; // n=5333399 d=6250000
             var priceObj = Price.FromString(price);
             long offerId = 1;
@@ -412,7 +413,7 @@ namespace kin_base_test
 
             Asset selling = new AssetTypeNative();
             var buying = Asset.CreateNonNativeAsset("USD", issuer.AccountId);
-            var amount = "0.00001";
+            var amount = "0.001";
             var price = "0.85334384"; // n=5333399 d=6250000
             var priceObj = Price.FromString(price);
             long offerId = 1;
@@ -451,7 +452,7 @@ namespace kin_base_test
 
             Asset selling = new AssetTypeNative();
             var buying = Asset.CreateNonNativeAsset("USD", issuer.AccountId);
-            var amount = "0.00001";
+            var amount = "0.001";
             var price = "0.85334384"; // n=5333399 d=6250000
             var priceObj = Price.FromString(price);
             long offerId = 1;
@@ -490,7 +491,7 @@ namespace kin_base_test
 
             Asset selling = new AssetTypeNative();
             var buying = Asset.CreateNonNativeAsset("USD", issuer.AccountId);
-            var amount = "0.00001";
+            var amount = "0.001";
             var price = "2.93850088"; // n=36731261 d=12500000
             var priceObj = Price.FromString(price);
 
@@ -513,7 +514,7 @@ namespace kin_base_test
 
             Asset selling = new AssetTypeNative();
             var buying = Asset.CreateNonNativeAsset("USD", issuer.AccountId);
-            var amount = "0.00001";
+            var amount = "0.001";
             var price = "2.93850088"; // n=36731261 d=12500000
             var priceObj = Price.FromString(price);
 
@@ -611,17 +612,17 @@ namespace kin_base_test
         public void TestToXdrAmount()
         {
             Assert.AreEqual(0L, Operation.ToXdrAmount("0"));
-            Assert.AreEqual(1L, Operation.ToXdrAmount("0.0000001"));
-            Assert.AreEqual(10000000L, Operation.ToXdrAmount("1"));
-            Assert.AreEqual(11234567L, Operation.ToXdrAmount("1.1234567"));
-            Assert.AreEqual(729912843007381L, Operation.ToXdrAmount("72991284.3007381"));
-            Assert.AreEqual(729912843007381L, Operation.ToXdrAmount("72991284.30073810"));
-            Assert.AreEqual(1014016711446800155L, Operation.ToXdrAmount("101401671144.6800155"));
-            Assert.AreEqual(9223372036854775807L, Operation.ToXdrAmount("922337203685.4775807"));
+            Assert.AreEqual(1L, Operation.ToXdrAmount("0.00001"));
+            Assert.AreEqual(10000000L, Operation.ToXdrAmount("100"));
+            Assert.AreEqual(11234567L, Operation.ToXdrAmount("112.34567"));
+            Assert.AreEqual(729912843007381L, Operation.ToXdrAmount("7299128430.07381"));
+            Assert.AreEqual(729912843007381L, Operation.ToXdrAmount("7299128430.073810"));
+            Assert.AreEqual(1014016711446800155L, Operation.ToXdrAmount("10140167114468.00155"));
+            Assert.AreEqual(9223372036854775807L, Operation.ToXdrAmount("92233720368547.75807"));
 
             try
             {
-                Operation.ToXdrAmount("0.00000001");
+                Operation.ToXdrAmount("0.000001");
                 Assert.Fail();
             }
             catch (ArithmeticException)
@@ -634,7 +635,7 @@ namespace kin_base_test
 
             try
             {
-                Operation.ToXdrAmount("72991284.30073811");
+                Operation.ToXdrAmount("7299128430.073811");
                 Assert.Fail();
             }
             catch (ArithmeticException)
@@ -688,12 +689,12 @@ namespace kin_base_test
         public void TestFromXdrAmount()
         {
             Assert.AreEqual("0", Operation.FromXdrAmount(0L));
-            Assert.AreEqual("0.0000001", Operation.FromXdrAmount(1L));
-            Assert.AreEqual("1", Operation.FromXdrAmount(10000000L));
-            Assert.AreEqual("1.1234567", Operation.FromXdrAmount(11234567L));
-            Assert.AreEqual("72991284.3007381", Operation.FromXdrAmount(729912843007381L));
-            Assert.AreEqual("101401671144.6800155", Operation.FromXdrAmount(1014016711446800155L));
-            Assert.AreEqual("922337203685.4775807", Operation.FromXdrAmount(9223372036854775807L));
+            Assert.AreEqual("0.00001", Operation.FromXdrAmount(1L));
+            Assert.AreEqual("100", Operation.FromXdrAmount(10000000L));
+            Assert.AreEqual("112.34567", Operation.FromXdrAmount(11234567L));
+            Assert.AreEqual("7299128430.07381", Operation.FromXdrAmount(729912843007381L));
+            Assert.AreEqual("10140167114468.00155", Operation.FromXdrAmount(1014016711446800155L));
+            Assert.AreEqual("92233720368547.75807", Operation.FromXdrAmount(9223372036854775807L));
         }
     }
 }
