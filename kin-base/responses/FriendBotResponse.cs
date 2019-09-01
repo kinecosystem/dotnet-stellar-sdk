@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using kin_base.responses;
 using System;
 using System.Collections.Generic;

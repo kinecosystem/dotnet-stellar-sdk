@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using kin_base.xdr;
 using Int64 = kin_base.xdr.Int64;
 

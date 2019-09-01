@@ -1,4 +1,4 @@
-﻿using System.Net;
+using System.Net;
 using System.Net.Http;
 using Moq;
 using static kin_base_test.FederationServerTest;

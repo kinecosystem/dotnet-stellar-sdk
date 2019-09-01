@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net.Http;
 using kin_base.responses;
 using kin_base.responses.page;

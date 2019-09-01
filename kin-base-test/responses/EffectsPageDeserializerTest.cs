@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using kin_base.responses;
 using kin_base.responses.effects;

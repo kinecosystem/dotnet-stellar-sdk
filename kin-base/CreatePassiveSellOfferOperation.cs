@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using sdkxdr = kin_base.xdr;
 
 namespace kin_base

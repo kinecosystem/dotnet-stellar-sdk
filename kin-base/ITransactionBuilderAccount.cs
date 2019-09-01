@@ -1,4 +1,4 @@
-﻿namespace kin_base
+namespace kin_base
 {
     public interface ITransactionBuilderAccount
     {

@@ -1,4 +1,4 @@
-﻿namespace kin_base.responses
+namespace kin_base.responses
 {
     public interface IPagingToken
     {

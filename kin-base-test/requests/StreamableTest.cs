@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net.Http;
 using Moq;
 using kin_base;

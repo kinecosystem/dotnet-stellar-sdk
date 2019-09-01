@@ -1,4 +1,4 @@
-﻿using dotnetstandard_bip32;
+using dotnetstandard_bip32;
 using kin_base.xdr;
 using System;
 using System.Linq;

@@ -1,4 +1,4 @@
-﻿namespace kin_base
+namespace kin_base
 {
     /// <summary>
     /// Abstract class for creating various Memo Types.

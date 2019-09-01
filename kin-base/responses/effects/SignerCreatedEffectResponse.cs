@@ -1,4 +1,4 @@
-﻿namespace kin_base.responses.effects
+namespace kin_base.responses.effects
 {
     /// <summary>
     ///     Represents signer_created effect response.

@@ -1,4 +1,4 @@
-﻿using kin_base.xdr;
+using kin_base.xdr;
 using System;
 using static kin_base.xdr.Operation;
 

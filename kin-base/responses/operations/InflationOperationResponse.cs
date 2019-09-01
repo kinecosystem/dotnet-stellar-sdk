@@ -1,4 +1,4 @@
-﻿namespace kin_base.responses.operations
+namespace kin_base.responses.operations
 {
     /// <summary>
     /// Represents Inflation operation response.

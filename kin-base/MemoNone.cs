@@ -1,4 +1,4 @@
-﻿using kin_base.xdr;
+using kin_base.xdr;
 
 namespace kin_base
 {

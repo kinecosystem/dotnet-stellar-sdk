@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Newtonsoft.Json;
 using kin_base.responses.effects;
 using kin_base.responses.operations;

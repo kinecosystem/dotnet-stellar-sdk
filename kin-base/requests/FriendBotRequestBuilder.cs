@@ -1,4 +1,4 @@
-﻿using kin_base.responses;
+using kin_base.responses;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
