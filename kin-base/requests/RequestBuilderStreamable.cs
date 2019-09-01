@@ -1,3 +1,6 @@
+// This file was modified by Kin Ecosystem (2019)
+
+
 using System;
 using System.Net.Http;
 using kin_base.responses;

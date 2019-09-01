@@ -1,3 +1,6 @@
+// This file was modified by Kin Ecosystem (2019)
+
+
 using Newtonsoft.Json;
 using kin_base.responses;
 using System;

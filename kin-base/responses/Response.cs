@@ -1,3 +1,6 @@
+// This file was modified by Kin Ecosystem (2019)
+
+
 using System.Linq;
 using System.Net.Http.Headers;
 using Newtonsoft.Json;

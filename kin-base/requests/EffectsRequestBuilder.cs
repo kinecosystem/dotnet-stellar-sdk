@@ -1,3 +1,6 @@
+// This file was modified by Kin Ecosystem (2019)
+
+
 using kin_base.responses;
 using kin_base.responses.effects;
 using kin_base.responses.page;

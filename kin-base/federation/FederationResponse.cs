@@ -1,3 +1,6 @@
+// This file was modified by Kin Ecosystem (2019)
+
+
 using Newtonsoft.Json;
 
 namespace kin_base.federation

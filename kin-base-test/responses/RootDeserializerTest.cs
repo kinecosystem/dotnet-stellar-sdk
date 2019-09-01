@@ -1,3 +1,6 @@
+// This file was modified by Kin Ecosystem (2019)
+
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using kin_base.responses;
 using System.IO;
