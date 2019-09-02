@@ -18,15 +18,15 @@ namespace kin_base_test.responses.results
             var op = (PathPaymentSuccess) failed.Results[0];
             Assert.AreEqual("GABSZVZBYEO5F4V5LZKV7GR4SAJ5IKJGGOF43BIN42FNDUG7QPH6IMRQ", op.Last.Destination.AccountId);
             Assert.AreEqual(Asset.CreateNonNativeAsset("USD", "GAVIGRVSL424MPYD6F6J5EZSTFORXESTMKEJUEPEII7BAWQ25BR25DUC"), op.Last.Asset);
-            Assert.AreEqual("0.02", op.Last.Amount);
+            Assert.AreEqual("2", op.Last.Amount);
             Assert.AreEqual(1, op.Offers.Length);
             var offer = op.Offers[0];
             Assert.AreEqual("GAVIGRVSL424MPYD6F6J5EZSTFORXESTMKEJUEPEII7BAWQ25BR25DUC", offer.Seller.AccountId);
             Assert.AreEqual(1234, offer.OfferId);
             Assert.AreEqual(new AssetTypeNative(), offer.AssetSold);
-            Assert.AreEqual("1", offer.AmountSold);
+            Assert.AreEqual("100", offer.AmountSold);
             Assert.AreEqual(Asset.CreateNonNativeAsset("USD", "GAVIGRVSL424MPYD6F6J5EZSTFORXESTMKEJUEPEII7BAWQ25BR25DUC"), offer.AssetBought);
-            Assert.AreEqual("0.02", offer.AmountBought);
+            Assert.AreEqual("2", offer.AmountBought);
         }
 
         [TestMethod]

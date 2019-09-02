@@ -32,7 +32,8 @@ namespace kin_base_test
         [TestInitialize]
         public void Setup()
         {
-            Network.UseTestNetwork();
+            Network OriginalTestNetwork = new Network("Test SDF Network ; September 2015");
+            Network.Use(OriginalTestNetwork);
 
             _fakeHttpMessageHandler = new Mock<FakeHttpMessageHandler> {CallBase = true};
             _httpClient = new HttpClient(_fakeHttpMessageHandler.Object);
@@ -115,7 +116,7 @@ namespace kin_base_test
             Assert.IsFalse(string.IsNullOrWhiteSpace(clientVersion));
             var result = response.Result;
             Assert.IsInstanceOfType(result, typeof(TransactionResultSuccess));
-            Assert.AreEqual("0.00001", result.FeeCharged);
+            Assert.AreEqual("0.001", result.FeeCharged);
         }
 
         [TestMethod]
@@ -136,7 +137,7 @@ namespace kin_base_test
 
             var result = response.Result;
             Assert.IsInstanceOfType(result, typeof(TransactionResultFailed));
-            Assert.AreEqual("0.00001", result.FeeCharged);
+            Assert.AreEqual("0.001", result.FeeCharged);
             Assert.AreEqual(1, ((TransactionResultFailed) result).Results.Count);
         }
 

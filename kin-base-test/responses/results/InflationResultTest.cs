@@ -18,7 +18,7 @@ namespace kin_base_test.responses.results
             Assert.AreEqual(2, op.Payouts.Length);
             var payout = op.Payouts[0];
             Assert.AreEqual("GAVIGRVSL424MPYD6F6J5EZSTFORXESTMKEJUEPEII7BAWQ25BR25DUC", payout.Destination.AccountId);
-            Assert.AreEqual("1", payout.Amount);
+            Assert.AreEqual("100", payout.Amount);
         }
 
         [TestMethod]

@@ -22,14 +22,14 @@ namespace kin_base_test
         public void TestSwitchToTestNetwork()
         {
             Network.UseTestNetwork();
-            Assert.AreEqual("Test SDF Network ; September 2015", Network.Current.NetworkPassphrase);
+            Assert.AreEqual("Kin Testnet ; December 2018", Network.Current.NetworkPassphrase);
         }
 
         [TestMethod]
         public void TestSwitchToPublicNework()
         {
             Network.UsePublicNetwork();
-            Assert.AreEqual("Public Global Stellar Network ; September 2015", Network.Current.NetworkPassphrase);
+            Assert.AreEqual("Kin Mainnet ; December 2018", Network.Current.NetworkPassphrase);
         }
     }
 }
