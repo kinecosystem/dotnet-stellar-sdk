@@ -1,0 +1,34 @@
+// This file was modified by Kin Ecosystem (2019)
+
+
+using kin_base.xdr;
+
+namespace kin_base
+{
+    public class AssetTypeCreditAlphaNum12 : AssetTypeCreditAlphaNum
+    {
+        public AssetTypeCreditAlphaNum12(string code, string issuer) : base(code, issuer)
+        {
+            if (code.Length < 5 || code.Length > 12)
+                throw new AssetCodeLengthInvalidException();
+        }
+
+        public override string GetType()
+        {
+            return "credit_alphanum12";
+        }
+
+        public override xdr.Asset ToXdr()
+        {
+            var thisXdr = new xdr.Asset();
+            thisXdr.Discriminant = AssetType.Create(AssetType.AssetTypeEnum.ASSET_TYPE_CREDIT_ALPHANUM12);
+            var credit = new xdr.Asset.AssetAlphaNum12();
+            credit.AssetCode = new AssetCode12(Util.PaddedByteArray(Code, 12));
+            var accountID = new AccountID();
+            accountID.InnerValue = KeyPair.FromAccountId(Issuer).XdrPublicKey;
+            credit.Issuer = accountID;
+            thisXdr.AlphaNum12 = credit;
+            return thisXdr;
+        }
+    }
+}
