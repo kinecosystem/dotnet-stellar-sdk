@@ -1,4 +1,7 @@
-﻿using System.Text.RegularExpressions;
+// This file was modified by Kin Ecosystem (2019)
+
+
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace kin_base.federation

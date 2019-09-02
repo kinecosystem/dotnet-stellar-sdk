@@ -1,4 +1,7 @@
-﻿namespace kin_base
+// This file was modified by Kin Ecosystem (2019)
+
+
+namespace kin_base
 {
     /// <summary>
     /// Abstract class for creating various Memo Types.

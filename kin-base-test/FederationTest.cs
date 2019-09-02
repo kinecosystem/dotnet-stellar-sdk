@@ -1,4 +1,7 @@
-﻿using System.Net;
+// This file was modified by Kin Ecosystem (2019)
+
+
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;

@@ -1,4 +1,7 @@
-﻿using System;
+// This file was modified by Kin Ecosystem (2019)
+
+
+using System;
 using kin_base.xdr;
 using Int64 = kin_base.xdr.Int64;
 

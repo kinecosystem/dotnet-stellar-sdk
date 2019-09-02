@@ -1,4 +1,7 @@
-﻿namespace kin_base.responses.effects
+// This file was modified by Kin Ecosystem (2019)
+
+
+namespace kin_base.responses.effects
 {
     /// <summary>
     ///     Represents trustline_created effect response.

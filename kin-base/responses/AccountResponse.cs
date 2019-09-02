@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+// This file was modified by Kin Ecosystem (2019)
+
+
+using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace kin_base.responses

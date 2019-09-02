@@ -1,4 +1,7 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+// This file was modified by Kin Ecosystem (2019)
+
+
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using kin_base;
 using dotnetstandard_bip32;
 

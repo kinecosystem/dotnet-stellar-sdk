@@ -1,4 +1,7 @@
-﻿using System.Net;
+// This file was modified by Kin Ecosystem (2019)
+
+
+using System.Net;
 using System.Net.Http;
 using Moq;
 using static kin_base_test.FederationServerTest;

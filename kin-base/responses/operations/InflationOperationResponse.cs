@@ -1,4 +1,7 @@
-﻿namespace kin_base.responses.operations
+// This file was modified by Kin Ecosystem (2019)
+
+
+namespace kin_base.responses.operations
 {
     /// <summary>
     /// Represents Inflation operation response.

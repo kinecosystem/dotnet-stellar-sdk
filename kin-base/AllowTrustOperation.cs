@@ -1,4 +1,7 @@
-﻿using System;
+// This file was modified by Kin Ecosystem (2019)
+
+
+using System;
 using System.Text;
 using kin_base.xdr;
 using sdkxdr = kin_base.xdr;

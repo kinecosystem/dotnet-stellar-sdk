@@ -1,4 +1,7 @@
-﻿using System;
+// This file was modified by Kin Ecosystem (2019)
+
+
+using System;
 using sdkxdr = kin_base.xdr;
 
 namespace kin_base

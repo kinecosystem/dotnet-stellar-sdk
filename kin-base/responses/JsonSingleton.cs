@@ -1,4 +1,7 @@
-﻿using System.Linq;
+// This file was modified by Kin Ecosystem (2019)
+
+
+using System.Linq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using kin_base.responses.effects;

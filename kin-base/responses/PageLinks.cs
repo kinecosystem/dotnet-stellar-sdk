@@ -1,4 +1,7 @@
-﻿namespace kin_base.responses.page
+// This file was modified by Kin Ecosystem (2019)
+
+
+namespace kin_base.responses.page
 {
     /// <summary>
     ///     Links connected to page response.

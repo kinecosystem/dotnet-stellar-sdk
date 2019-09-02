@@ -1,4 +1,7 @@
-﻿using kin_base.responses;
+// This file was modified by Kin Ecosystem (2019)
+
+
+using kin_base.responses;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;

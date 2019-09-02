@@ -1,4 +1,7 @@
-﻿using System.ComponentModel;
+// This file was modified by Kin Ecosystem (2019)
+
+
+using System.ComponentModel;
 using Newtonsoft.Json;
 
 namespace kin_base.responses.operations

@@ -1,4 +1,7 @@
-﻿using System;
+// This file was modified by Kin Ecosystem (2019)
+
+
+using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
