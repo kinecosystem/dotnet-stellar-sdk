@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace kin_base.responses.effects
+namespace Kin.Base.responses.effects
 {
     /// <summary>
     ///     Represents account_home_domain_updated effect response.

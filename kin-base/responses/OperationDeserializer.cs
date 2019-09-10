@@ -4,9 +4,9 @@
 using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using kin_base.responses.operations;
+using Kin.Base.responses.operations;
 
-namespace kin_base.responses
+namespace Kin.Base.responses
 {
     public class OperationDeserializer : JsonConverter<OperationResponse>
     {

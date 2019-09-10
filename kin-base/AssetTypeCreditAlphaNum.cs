@@ -3,7 +3,7 @@
 
 using System;
 
-namespace kin_base
+namespace Kin.Base
 {
     /// <summary>
     /// Assets are uniquely identified by the asset code and the issuer. Ultimately, it’s up to the issuer to set the asset code. By convention, however, currencies should be represented by 

@@ -5,9 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using Newtonsoft.Json;
-using sdkxdr = kin_base.xdr;
+using sdkxdr = Kin.Base.xdr;
 
-namespace kin_base
+namespace Kin.Base
 {
     public class Price
     {

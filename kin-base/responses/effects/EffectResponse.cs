@@ -3,9 +3,9 @@
 
 using Newtonsoft.Json;
 using System;
-using kin_base.responses.operations;
+using Kin.Base.responses.operations;
 
-namespace kin_base.responses.effects
+namespace Kin.Base.responses.effects
 {
     [JsonConverter(typeof(EffectDeserializer))]
     public abstract class EffectResponse : Response, IPagingToken

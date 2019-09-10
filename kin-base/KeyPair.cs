@@ -2,14 +2,14 @@
 
 
 using dotnetstandard_bip32;
-using kin_base.xdr;
+using Kin.Base.xdr;
 using System;
 using System.Linq;
 using System.Security.Cryptography;
 using NSec.Cryptography;
-using PublicKey = kin_base.xdr.PublicKey;
+using PublicKey = Kin.Base.xdr.PublicKey;
 
-namespace kin_base
+namespace Kin.Base
 {
     /// <summary>
     /// <see cref="KeyPair"/> represents public (and secret) keys of the account.

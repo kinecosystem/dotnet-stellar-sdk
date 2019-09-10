@@ -2,9 +2,9 @@
 
 
 using System.Collections.Generic;
-using kin_base.responses.results;
+using Kin.Base.responses.results;
 
-namespace kin_base.responses
+namespace Kin.Base.responses
 {
     /// <summary>
     /// One of the operations failed (none were applied).

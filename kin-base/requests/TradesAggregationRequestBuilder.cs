@@ -1,15 +1,15 @@
 // This file was modified by Kin Ecosystem (2019)
 
 
-using kin_base.responses;
-using kin_base.responses.page;
+using Kin.Base.responses;
+using Kin.Base.responses.page;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace kin_base.requests
+namespace Kin.Base.requests
 {
     public class TradesAggregationRequestBuilder : RequestBuilderExecutePageable<TradesAggregationRequestBuilder, TradeAggregationResponse>
     {

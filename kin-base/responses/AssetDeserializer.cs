@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 
-namespace kin_base.responses
+namespace Kin.Base.responses
 {
     public class AssetDeserializer : JsonConverter<Asset>
     {

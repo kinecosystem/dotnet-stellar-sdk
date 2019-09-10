@@ -2,7 +2,7 @@
 
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using kin_base;
+using Kin.Base;
 using System;
 using System.Collections.Generic;
 using System.IO;

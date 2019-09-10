@@ -6,10 +6,10 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Reflection;
 using System.Threading.Tasks;
-using kin_base.requests;
-using kin_base.responses;
+using Kin.Base.requests;
+using Kin.Base.responses;
 
-namespace kin_base
+namespace Kin.Base
 {
     public class Server : IDisposable
     {

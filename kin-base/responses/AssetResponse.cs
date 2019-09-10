@@ -4,7 +4,7 @@
 using Newtonsoft.Json;
 using System;
 
-namespace kin_base.responses
+namespace Kin.Base.responses
 {
     /// <summary>
     ///

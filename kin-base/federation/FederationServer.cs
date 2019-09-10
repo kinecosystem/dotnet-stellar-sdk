@@ -8,9 +8,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Nett;
-using kin_base.requests;
+using Kin.Base.requests;
 
-namespace kin_base.federation
+namespace Kin.Base.federation
 {
     /// <summary>
     ///     FederationServer handles a network connection to a

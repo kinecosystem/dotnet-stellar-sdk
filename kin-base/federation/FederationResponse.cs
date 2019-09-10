@@ -3,7 +3,7 @@
 
 using Newtonsoft.Json;
 
-namespace kin_base.federation
+namespace Kin.Base.federation
 {
     /// <summary>
     ///     Object to hold a response from a federation server.

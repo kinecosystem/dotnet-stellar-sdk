@@ -2,7 +2,7 @@
 
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using kin_base;
+using Kin.Base;
 using dotnetstandard_bip32;
 
 using System;

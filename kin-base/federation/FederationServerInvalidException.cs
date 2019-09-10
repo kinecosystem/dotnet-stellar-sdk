@@ -3,7 +3,7 @@
 
 using System;
 
-namespace kin_base.federation
+namespace Kin.Base.federation
 {
     /// <inheritdoc />
     /// <summary>

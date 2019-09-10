@@ -3,7 +3,7 @@
 
 using Newtonsoft.Json;
 
-namespace kin_base.responses.effects
+namespace Kin.Base.responses.effects
 {
     public abstract class TrustlineCUDResponse : EffectResponse
     {

@@ -4,7 +4,7 @@
 using System;
 using System.Text;
 
-namespace kin_base
+namespace Kin.Base
 {
     public class Network
     {

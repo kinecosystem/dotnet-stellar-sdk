@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace kin_base.responses.operations
+namespace Kin.Base.responses.operations
 {
     /// <summary>
     /// Represents AccountMerge operation response.

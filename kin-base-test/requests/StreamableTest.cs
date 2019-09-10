@@ -4,8 +4,8 @@
 using System;
 using System.Net.Http;
 using Moq;
-using kin_base;
-using kin_base.requests;
+using Kin.Base;
+using Kin.Base.requests;
 
 namespace kin_base_test.requests
 {

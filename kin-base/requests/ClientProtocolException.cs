@@ -3,7 +3,7 @@
 
 using System;
 
-namespace kin_base.requests
+namespace Kin.Base.requests
 {
     public class ClientProtocolException : Exception
     {

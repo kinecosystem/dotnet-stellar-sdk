@@ -2,7 +2,7 @@
 
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using kin_base.responses;
+using Kin.Base.responses;
 using System.IO;
 using Newtonsoft.Json;
 

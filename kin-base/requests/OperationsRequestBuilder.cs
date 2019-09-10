@@ -4,11 +4,11 @@
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
-using kin_base.responses;
-using kin_base.responses.operations;
-using kin_base.responses.page;
+using Kin.Base.responses;
+using Kin.Base.responses.operations;
+using Kin.Base.responses.page;
 
-namespace kin_base.requests
+namespace Kin.Base.requests
 {
     public class OperationsRequestBuilder : RequestBuilderStreamable<OperationsRequestBuilder, OperationResponse>
     {

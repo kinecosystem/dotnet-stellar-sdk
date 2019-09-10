@@ -1,7 +1,7 @@
 // This file was modified by Kin Ecosystem (2019)
 
 
-namespace kin_base.responses
+namespace Kin.Base.responses
 {
     /// <summary>
     /// Fee would bring account below reserve.

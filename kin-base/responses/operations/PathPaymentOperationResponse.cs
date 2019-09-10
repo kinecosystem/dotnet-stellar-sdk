@@ -3,7 +3,7 @@
 
 using Newtonsoft.Json;
 
-namespace kin_base.responses.operations
+namespace Kin.Base.responses.operations
 {
     /// <inheritdoc />
     /// <summary>

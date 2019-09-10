@@ -3,7 +3,7 @@
 
 using System;
 
-namespace kin_base
+namespace Kin.Base
 {
     /// <summary>
     /// Returns information and links relating to a single account.
@@ -14,7 +14,7 @@ namespace kin_base
         /// Class constructor.
         /// </summary>
         /// <param name="keypair">KeyPair associated with this Account</param> 
-        /// <param name="sequenceNumber">Current sequence number of the account (can be obtained using dotnet-stellar-sdk or horizon server)</param> 
+        /// <param name="sequenceNumber">Current sequence number of the account (can be obtained using Kin.Base or horizon server)</param> 
         public Account(string accountId, long? sequenceNumber)
         {
             AccountId = accountId ?? throw new ArgumentNullException(nameof(accountId), "accountId cannot be null");

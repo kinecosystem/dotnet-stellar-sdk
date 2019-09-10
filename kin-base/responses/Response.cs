@@ -5,7 +5,7 @@ using System.Linq;
 using System.Net.Http.Headers;
 using Newtonsoft.Json;
 
-namespace kin_base.responses
+namespace Kin.Base.responses
 {
     [JsonObject(MemberSerialization.OptIn)]
         public abstract class Response

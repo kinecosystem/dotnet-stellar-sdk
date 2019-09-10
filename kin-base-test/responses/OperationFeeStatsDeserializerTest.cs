@@ -2,13 +2,13 @@
 
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using kin_base.responses.operations;
+using Kin.Base.responses.operations;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using Newtonsoft.Json;
-using kin_base.responses;
+using Kin.Base.responses;
 
 namespace kin_base_test.responses
 {

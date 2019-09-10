@@ -2,7 +2,7 @@
 
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using kin_base;
+using Kin.Base;
 
 namespace kin_base_test
 {

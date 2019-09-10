@@ -4,8 +4,8 @@
 using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
-using kin_base.responses;
-using kin_base.responses.page;
+using Kin.Base.responses;
+using Kin.Base.responses.page;
 
 namespace kin_base_test.responses
 {

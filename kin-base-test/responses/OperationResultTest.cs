@@ -2,8 +2,8 @@
 
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using kin_base.responses;
-using kin_base.responses.results;
+using Kin.Base.responses;
+using Kin.Base.responses.results;
 
 namespace kin_base_test.responses
 {

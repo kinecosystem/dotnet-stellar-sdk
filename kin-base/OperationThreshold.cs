@@ -1,7 +1,7 @@
 // This file was modified by Kin Ecosystem (2019)
 
 
-namespace kin_base
+namespace Kin.Base
 {
     /// <summary>
     /// Operation threshold level.

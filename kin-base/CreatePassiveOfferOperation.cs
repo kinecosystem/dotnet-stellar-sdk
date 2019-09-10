@@ -2,9 +2,9 @@
 
 
 using System;
-using sdkxdr = kin_base.xdr;
+using sdkxdr = Kin.Base.xdr;
 
-namespace kin_base
+namespace Kin.Base
 {
     /// <summary>
     /// Represents a <see cref="CreatePassiveSellOfferOp"/>.
@@ -39,7 +39,7 @@ namespace kin_base
             var amount = new sdkxdr.Int64();
             amount.InnerValue = ToXdrAmount(Amount);
             op.Amount = amount;
-            var price = kin_base.Price.FromString(Price);
+            var price = Kin.Base.Price.FromString(Price);
             op.Price = price.ToXdr();
 
             var body = new sdkxdr.Operation.OperationBody();
@@ -74,7 +74,7 @@ namespace kin_base
                 _Amount = FromXdrAmount(op.Amount.InnerValue);
                 var n = new decimal(op.Price.N.InnerValue);
                 var d = new decimal(op.Price.D.InnerValue);
-                _Price = kin_base.Amount.DecimalToString(decimal.Divide(n, d));
+                _Price = Kin.Base.Amount.DecimalToString(decimal.Divide(n, d));
             }
 
             /// <summary>

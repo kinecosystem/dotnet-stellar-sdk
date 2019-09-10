@@ -1,7 +1,7 @@
 // This file was modified by Kin Ecosystem (2019)
 
 
-namespace kin_base.responses.page
+namespace Kin.Base.responses.page
 {
     /// <summary>
     ///     Links connected to page response.

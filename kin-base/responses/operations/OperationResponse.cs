@@ -4,7 +4,7 @@
 using System.ComponentModel;
 using Newtonsoft.Json;
 
-namespace kin_base.responses.operations
+namespace Kin.Base.responses.operations
 {
     /// <summary>
     /// Abstract class for operation responses.

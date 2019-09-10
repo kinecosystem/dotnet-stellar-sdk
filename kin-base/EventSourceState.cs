@@ -6,7 +6,7 @@
  *  Redistribution and use in source and binary forms, with or without modification, is permitted.
  */
 
-namespace kin_base
+namespace Kin.Base
 {
     public sealed partial class EventSource
     {

@@ -3,7 +3,7 @@
 
 using System;
 
-namespace kin_base.xdr
+namespace Kin.Base.xdr
 {
 // === xdr source ============================================================
 //  union ManageDataResult switch (ManageDataResultCode code)

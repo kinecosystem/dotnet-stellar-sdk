@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace kin_base
+namespace Kin.Base
 {
     public static class EnumerableExtensions
     {

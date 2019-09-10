@@ -1,7 +1,7 @@
 // This file was modified by Kin Ecosystem (2019)
 
 
-namespace kin_base.responses.operations
+namespace Kin.Base.responses.operations
 {
     public class ManageSellOfferOperationResponse : ManageOfferOperationResponse
     {

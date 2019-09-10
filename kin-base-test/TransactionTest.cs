@@ -5,13 +5,13 @@ using System;
 using System.Linq;
 using System.Security.Cryptography;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using kin_base;
-using kin_base.responses;
-using kin_base.xdr;
-using Memo = kin_base.Memo;
-using TimeBounds = kin_base.TimeBounds;
-using Transaction = kin_base.Transaction;
-using XdrTransaction = kin_base.xdr.Transaction;
+using Kin.Base;
+using Kin.Base.responses;
+using Kin.Base.xdr;
+using Memo = Kin.Base.Memo;
+using TimeBounds = Kin.Base.TimeBounds;
+using Transaction = Kin.Base.Transaction;
+using XdrTransaction = Kin.Base.xdr.Transaction;
 
 namespace kin_base_test
 {

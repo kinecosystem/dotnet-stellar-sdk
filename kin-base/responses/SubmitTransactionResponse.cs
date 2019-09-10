@@ -2,11 +2,11 @@
 
 
 using Newtonsoft.Json;
-using kin_base.xdr;
+using Kin.Base.xdr;
 using System;
 using System.Collections.Generic;
 
-namespace kin_base.responses
+namespace Kin.Base.responses
 {
     public class SubmitTransactionResponse : Response
     {

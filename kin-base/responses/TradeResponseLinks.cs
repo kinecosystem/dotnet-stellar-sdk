@@ -2,9 +2,9 @@
 
 
 using Newtonsoft.Json;
-using kin_base.responses.operations;
+using Kin.Base.responses.operations;
 
-namespace kin_base.responses
+namespace Kin.Base.responses
 {
     public class TradeResponseLinks
     {

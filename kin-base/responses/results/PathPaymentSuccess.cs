@@ -1,7 +1,7 @@
 // This file was modified by Kin Ecosystem (2019)
 
 
-namespace kin_base.responses.results
+namespace Kin.Base.responses.results
 {
     /// <summary>
     /// Operation successful.
@@ -32,7 +32,7 @@ namespace kin_base.responses.results
                 {
                     Destination = KeyPair.FromXdrPublicKey(result.Destination.InnerValue),
                     Asset = Asset.FromXdr(result.Asset),
-                    Amount = kin_base.Amount.FromXdr(result.Amount.InnerValue)
+                    Amount = Kin.Base.Amount.FromXdr(result.Amount.InnerValue)
                 };
             }
         }

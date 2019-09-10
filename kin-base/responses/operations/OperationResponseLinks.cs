@@ -2,10 +2,10 @@
 
 
 using Newtonsoft.Json;
-using kin_base.responses.effects;
-using kin_base.responses.page;
+using Kin.Base.responses.effects;
+using Kin.Base.responses.page;
 
-namespace kin_base.responses.operations
+namespace Kin.Base.responses.operations
 {
     /// <summary>
     /// The response is for the genesis ledger of the Stellar network, and the links in the _links attribute provide links to other relavant resources in Horizon.
