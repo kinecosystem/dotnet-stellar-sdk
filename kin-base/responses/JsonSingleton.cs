@@ -4,11 +4,11 @@
 using System.Linq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using kin_base.responses.effects;
-using kin_base.responses.operations;
-using kin_base.responses.page;
+using Kin.Base.responses.effects;
+using Kin.Base.responses.operations;
+using Kin.Base.responses.page;
 
-namespace kin_base.responses
+namespace Kin.Base.responses
 {
     public static class JsonSingleton
     {

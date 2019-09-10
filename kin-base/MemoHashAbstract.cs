@@ -4,7 +4,7 @@
 using System;
 using System.Linq;
 
-namespace kin_base
+namespace Kin.Base
 {
     public abstract class MemoHashAbstract : Memo
     {

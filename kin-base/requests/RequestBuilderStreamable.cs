@@ -3,10 +3,10 @@
 
 using System;
 using System.Net.Http;
-using kin_base.responses;
-using kin_base.responses.page;
+using Kin.Base.responses;
+using Kin.Base.responses.page;
 
-namespace kin_base.requests
+namespace Kin.Base.requests
 {
     public class RequestBuilderStreamable<T, TResponse> : RequestBuilderExecutePageable<T, TResponse> where T : class where TResponse : class
     {

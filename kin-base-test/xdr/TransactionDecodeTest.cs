@@ -7,9 +7,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using kin_base;
-using kin_base.xdr;
-using Transaction = kin_base.xdr.Transaction;
+using Kin.Base;
+using Kin.Base.xdr;
+using Transaction = Kin.Base.xdr.Transaction;
 
 namespace kin_base_test.xdr
 {

@@ -2,12 +2,12 @@
 
 
 using Newtonsoft.Json;
-using kin_base.responses;
+using Kin.Base.responses;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace kin_base.responses
+namespace Kin.Base.responses
 {
     public class FriendBotResponse
     {

@@ -4,7 +4,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace kin_base
+namespace Kin.Base
 {
     [Serializable]
     internal class NoNetworkSelectedException : Exception

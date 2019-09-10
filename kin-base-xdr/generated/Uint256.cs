@@ -3,7 +3,7 @@
 
 using System;
 
-namespace kin_base.xdr
+namespace Kin.Base.xdr
 {
 // === xdr source ============================================================
 //  typedef opaque uint256[32];

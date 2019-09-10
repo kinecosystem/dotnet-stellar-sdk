@@ -1,7 +1,7 @@
 // This file was modified by Kin Ecosystem (2019)
 
 
-namespace kin_base.responses
+namespace Kin.Base.responses
 {
     /// <summary>
     /// Too few valid signatures or invalid network.

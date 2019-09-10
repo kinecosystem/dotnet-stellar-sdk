@@ -2,10 +2,10 @@
 
 
 using System;
-using kin_base.xdr;
-using sdkxdr = kin_base.xdr;
+using Kin.Base.xdr;
+using sdkxdr = Kin.Base.xdr;
 
-namespace kin_base
+namespace Kin.Base
 {
     /// <summary>
     /// Represents a <see cref="ManageDataOp"/>.

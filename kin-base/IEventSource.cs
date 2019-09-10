@@ -5,7 +5,7 @@ using System;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
 
-namespace kin_base
+namespace Kin.Base
 {
     public interface IEventSource
     {

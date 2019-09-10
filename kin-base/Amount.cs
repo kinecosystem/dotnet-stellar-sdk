@@ -4,7 +4,7 @@
 using System;
 using System.Globalization;
 
-namespace kin_base
+namespace Kin.Base
 {
     public static class Amount
     {

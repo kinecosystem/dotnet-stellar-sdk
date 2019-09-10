@@ -4,9 +4,9 @@
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
-using kin_base.responses;
+using Kin.Base.responses;
 
-namespace kin_base.requests
+namespace Kin.Base.requests
 {
     /// <summary>
     ///     Builds requests connected to accounts.

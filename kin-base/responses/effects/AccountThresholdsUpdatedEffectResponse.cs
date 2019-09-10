@@ -3,7 +3,7 @@
 
 using Newtonsoft.Json;
 
-namespace kin_base.responses.effects
+namespace Kin.Base.responses.effects
 {
     /// <summary>
     ///     Represents account_thresholds_updated effect response.

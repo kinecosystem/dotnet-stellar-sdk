@@ -2,9 +2,9 @@
 
 
 using System;
-using kin_base.xdr;
+using Kin.Base.xdr;
 
-namespace kin_base
+namespace Kin.Base
 {
     public class MemoId : Memo
     {

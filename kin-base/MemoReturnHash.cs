@@ -1,9 +1,9 @@
 // This file was modified by Kin Ecosystem (2019)
 
 
-using kin_base.xdr;
+using Kin.Base.xdr;
 
-namespace kin_base
+namespace Kin.Base
 {
     public class MemoReturnHash : MemoHashAbstract
     {

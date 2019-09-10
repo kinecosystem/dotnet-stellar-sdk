@@ -5,7 +5,7 @@ using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace kin_base.responses
+namespace Kin.Base.responses
 {
     // We have to use reflection because Newtonsoft.Json does not support generic JsonConverters
     // https://github.com/JamesNK/Newtonsoft.Json/issues/1332

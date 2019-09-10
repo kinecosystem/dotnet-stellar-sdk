@@ -3,7 +3,7 @@
 
 using System;
 
-namespace kin_base
+namespace Kin.Base
 {
     /// <summary>
     /// Exception thrown when WebAuthentication verification fails.

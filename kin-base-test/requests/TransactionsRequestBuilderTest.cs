@@ -4,9 +4,9 @@
 using System.IO;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using kin_base;
-using kin_base.requests;
-using kin_base.responses;
+using Kin.Base;
+using Kin.Base.requests;
+using Kin.Base.responses;
 using kin_base_test.responses;
 
 namespace kin_base_test.requests

@@ -12,8 +12,8 @@ using Castle.DynamicProxy.Generators;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Moq.Language;
-using kin_base;
-using kin_base.responses;
+using Kin.Base;
+using Kin.Base.responses;
 
 namespace kin_base_test
 {

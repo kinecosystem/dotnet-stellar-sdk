@@ -6,7 +6,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace kin_base
+namespace Kin.Base
 {
     public static class Util
     {

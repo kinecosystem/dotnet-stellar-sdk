@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Web;
 
-namespace kin_base
+namespace Kin.Base
 {
     public static class UriBuilderExtensions
     {

@@ -3,7 +3,7 @@
 
 using Newtonsoft.Json;
 
-namespace kin_base.responses.operations
+namespace Kin.Base.responses.operations
 {
     /// <summary>
     /// Represents CreatePassiveOffer operation response.

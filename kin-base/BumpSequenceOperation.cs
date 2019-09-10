@@ -1,11 +1,11 @@
 // This file was modified by Kin Ecosystem (2019)
 
 
-using kin_base.xdr;
+using Kin.Base.xdr;
 using System;
-using static kin_base.xdr.Operation;
+using static Kin.Base.xdr.Operation;
 
-namespace kin_base
+namespace Kin.Base
 {
     /// <summary>
     /// Represents a <see cref="BumpSequenceOp"/>.

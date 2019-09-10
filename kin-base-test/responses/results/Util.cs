@@ -3,7 +3,7 @@
 
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using kin_base.responses;
+using Kin.Base.responses;
 
 namespace kin_base_test.responses.results
 {

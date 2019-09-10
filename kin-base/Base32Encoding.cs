@@ -3,7 +3,7 @@
 
 using System;
 
-namespace kin_base
+namespace Kin.Base
 {
     public static class Base32Encoding
     {

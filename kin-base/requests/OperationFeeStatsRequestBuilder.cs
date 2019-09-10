@@ -1,15 +1,15 @@
 // This file was modified by Kin Ecosystem (2019)
 
 
-using kin_base.responses;
+using Kin.Base.responses;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using kin_base.responses.operations;
+using Kin.Base.responses.operations;
 
-namespace kin_base.requests
+namespace Kin.Base.requests
 {
     public class OperationFeeStatsRequestBuilder : RequestBuilder<OperationFeeStatsRequestBuilder>
     {

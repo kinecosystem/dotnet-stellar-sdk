@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace kin_base.xdr
+namespace Kin.Base.xdr
 {
     /// <summary>
     /// Stream class for Reading XDR Data

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Moq.Language;
-using kin_base.federation;
+using Kin.Base.federation;
 using static kin_base_test.FederationServerTest;
 
 namespace kin_base_test.federation

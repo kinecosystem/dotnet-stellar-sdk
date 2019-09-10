@@ -4,9 +4,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using kin_base.responses.results;
+using Kin.Base.responses.results;
 
-namespace kin_base.responses
+namespace Kin.Base.responses
 {
     public class TransactionResult
     {

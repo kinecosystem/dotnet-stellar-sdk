@@ -2,10 +2,10 @@
 
 
 using System;
-using kin_base.xdr;
-using sdkxdr = kin_base.xdr;
+using Kin.Base.xdr;
+using sdkxdr = Kin.Base.xdr;
 
-namespace kin_base
+namespace Kin.Base
 {
     /// <summary>
     /// Represents a <see cref="ManageSellOfferOp"/>.
@@ -40,7 +40,7 @@ namespace kin_base
             var op = new sdkxdr.ManageSellOfferOp {Selling = Selling.ToXdr(), Buying = Buying.ToXdr()};
             var amount = new sdkxdr.Int64 {InnerValue = ToXdrAmount(Amount)};
             op.Amount = amount;
-            var price = kin_base.Price.FromString(Price);
+            var price = Kin.Base.Price.FromString(Price);
             op.Price = price.ToXdr();
             var offerId = new sdkxdr.Int64 {InnerValue = OfferId};
             op.OfferID = offerId;
@@ -81,7 +81,7 @@ namespace kin_base
                 _Amount = FromXdrAmount(op.Amount.InnerValue);
                 var n = new decimal(op.Price.N.InnerValue);
                 var d = new decimal(op.Price.D.InnerValue);
-                _Price = kin_base.Amount.DecimalToString(decimal.Divide(n, d));
+                _Price = Kin.Base.Amount.DecimalToString(decimal.Divide(n, d));
                 offerId = op.OfferID.InnerValue;
             }
 

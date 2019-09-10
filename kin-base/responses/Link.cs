@@ -6,9 +6,9 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using kin_base.requests;
+using Kin.Base.requests;
 
-namespace kin_base.responses
+namespace Kin.Base.responses
 {
     public class Link
     {

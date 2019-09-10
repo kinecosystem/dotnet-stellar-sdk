@@ -4,7 +4,7 @@
 using System;
 using System.Linq;
 
-namespace kin_base.responses.results
+namespace Kin.Base.responses.results
 {
     public class PathPaymentResult : OperationResult
     {

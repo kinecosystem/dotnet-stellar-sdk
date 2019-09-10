@@ -4,9 +4,9 @@
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
-using kin_base.responses.page;
+using Kin.Base.responses.page;
 
-namespace kin_base.requests
+namespace Kin.Base.requests
 {
     public class RequestBuilderExecutePageable<T, TResponse> : RequestBuilder<T> where T : class where TResponse : class
     {

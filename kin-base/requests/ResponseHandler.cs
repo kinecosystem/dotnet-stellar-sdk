@@ -4,9 +4,9 @@
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using kin_base.responses;
+using Kin.Base.responses;
 
-namespace kin_base.requests
+namespace Kin.Base.requests
 {
     public class ResponseHandler<T> where T : class
     {

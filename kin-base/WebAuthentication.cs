@@ -4,7 +4,7 @@
 using System;
 using System.Text;
 
-namespace kin_base
+namespace Kin.Base
 {
     /// <summary>
     /// Implement SEP-10: Stellar Web Authentication.

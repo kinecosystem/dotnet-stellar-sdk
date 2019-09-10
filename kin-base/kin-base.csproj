@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.0.2</Version>
+    <Version>0.1.0</Version>
     <ApplicationIcon />
     <OutputType>Library</OutputType>
     <StartupObject />
-    <RootNamespace>kin_base</RootNamespace>
+    <RootNamespace>Kin.Base</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>The Kin C# SDK facilitates client integration with the Kin Horizon API server and submission of Kin transactions. It has two main uses: querying Horizon and building, signing, and submitting transactions to the Kin network.</Description>
     <PackageId>kin-base</PackageId>

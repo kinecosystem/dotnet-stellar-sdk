@@ -4,7 +4,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace kin_base.responses
+namespace Kin.Base.responses
 {
     /// <summary>
     ///     Represents account balance.

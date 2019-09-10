@@ -8,7 +8,7 @@
 
 using System;
 
-namespace kin_base
+namespace Kin.Base
 {
     public sealed partial class EventSource
     {

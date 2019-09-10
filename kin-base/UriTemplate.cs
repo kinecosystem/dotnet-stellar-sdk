@@ -5,9 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
-using kin_base.requests;
+using Kin.Base.requests;
 
-namespace kin_base
+namespace Kin.Base
 {
     /// <summary>
     /// Partial implement of the Uri Template Spec (RFC 6570).

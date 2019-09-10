@@ -3,7 +3,7 @@
 
 using System;
 
-namespace kin_base.xdr
+namespace Kin.Base.xdr
 {
 // === xdr source ============================================================
 //  struct InflationPayout // or use PaymentResultAtom to limit types?

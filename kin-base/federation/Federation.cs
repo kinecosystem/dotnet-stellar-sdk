@@ -4,7 +4,7 @@
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace kin_base.federation
+namespace Kin.Base.federation
 {
     public static class Federation
     {

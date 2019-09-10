@@ -2,9 +2,9 @@
 
 
 using System;
-using kin_base.xdr;
+using Kin.Base.xdr;
 
-namespace kin_base
+namespace Kin.Base
 {
     /// <summary>
     /// Asset class represents an asset, either the native asset (KIN) or a asset code / issuer account ID pair.

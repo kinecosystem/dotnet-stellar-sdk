@@ -4,7 +4,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace kin_base.responses
+namespace Kin.Base.responses
 {
     public class PathResponse : Response
     {

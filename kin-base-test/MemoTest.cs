@@ -5,9 +5,9 @@ using System;
 using System.Linq;
 using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using kin_base;
+using Kin.Base;
 using FormatException = System.FormatException;
-using sdkxdr = kin_base.xdr;
+using sdkxdr = Kin.Base.xdr;
 
 namespace kin_base_test
 {

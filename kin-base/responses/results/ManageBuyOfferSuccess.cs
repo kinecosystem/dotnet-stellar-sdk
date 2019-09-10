@@ -3,9 +3,9 @@
 
 using System;
 using System.Linq;
-using kin_base.xdr;
+using Kin.Base.xdr;
 
-namespace kin_base.responses.results
+namespace Kin.Base.responses.results
 {
     /// <summary>
     /// Operation successful.

@@ -3,7 +3,7 @@
 
 using System;
 
-namespace kin_base.federation
+namespace Kin.Base.federation
 {
     public class NotFoundException : Exception
     {

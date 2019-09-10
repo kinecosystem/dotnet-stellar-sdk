@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace kin_base.responses
+namespace Kin.Base.responses
 {
     public class TradeAggregationResponse : Response
     {

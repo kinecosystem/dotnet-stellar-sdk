@@ -3,7 +3,7 @@
 
 using System;
 
-namespace kin_base.federation
+namespace Kin.Base.federation
 {
     /// <summary>
     ///     Federation server was not found in stellar.toml file.

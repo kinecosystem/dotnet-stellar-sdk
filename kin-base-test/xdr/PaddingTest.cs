@@ -3,7 +3,7 @@
 
 using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using kin_base.xdr;
+using Kin.Base.xdr;
 
 namespace kin_base_test.xdr
 {

@@ -2,9 +2,9 @@
 
 
 using System;
-using sdkxdr = kin_base.xdr;
+using sdkxdr = Kin.Base.xdr;
 
-namespace kin_base
+namespace Kin.Base
 {
     /// <summary>
     ///     Signer is a helper class that creates <see cref="sdkxdr.SignerKey" /> objects.
