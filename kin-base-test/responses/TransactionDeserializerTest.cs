@@ -92,18 +92,18 @@ namespace kin_base_test.responses
             Assert.AreEqual(changes.Count, 2); // Two operations
             Assert.AreEqual(changes[0].LedgerEntryUpdates.Length, 1);
             var accountEntry = (AccountLedgerEntryChange) changes[0].LedgerEntryUpdates[0];
-            Assert.AreEqual(accountEntry.LastModifiedLedgerSeq, 4145508);
+            Assert.AreEqual(accountEntry.LastModifiedLedgerSeq, 4145508U);
             Assert.AreEqual(accountEntry.Balance, "74327872");
             Assert.AreEqual(accountEntry.AccountId.AccountId, "GA5VKONC2ABAHER37Q6WZ7JLBEQ2RENLU2GVP2K2E2HAJT2T6CNPZ7QX");
 
             Assert.AreEqual(changes[1].LedgerEntryUpdates.Length, 2);
             var accountEntry2 = (AccountLedgerEntryChange) changes[1].LedgerEntryUpdates[0];
-            Assert.AreEqual(accountEntry2.LastModifiedLedgerSeq, 4145508);
+            Assert.AreEqual(accountEntry2.LastModifiedLedgerSeq, 4145508U);
             Assert.AreEqual(accountEntry2.Balance, "74327862");
             Assert.AreEqual(accountEntry2.AccountId.AccountId, "GA5VKONC2ABAHER37Q6WZ7JLBEQ2RENLU2GVP2K2E2HAJT2T6CNPZ7QX");
 
             var accountEntry3 = (AccountLedgerEntryChange) changes[1].LedgerEntryUpdates[0];
-            Assert.AreEqual(accountEntry3.LastModifiedLedgerSeq, 4145508);
+            Assert.AreEqual(accountEntry3.LastModifiedLedgerSeq, 4145508U);
             Assert.AreEqual(accountEntry3.Balance, "10");
             Assert.AreEqual(accountEntry3.AccountId.AccountId, "GBGAUR5WGQF3UGGPT2FSWLBCA4WDWKVZOHXWVG5RVQHY4EKJ6SP4SG5G");
         }
