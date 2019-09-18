@@ -3,10 +3,13 @@
 
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using Kin.Base.responses.effects;
 using Kin.Base.responses.operations;
 using Kin.Base.responses.page;
+
+using Kin.Base.xdr;
 
 namespace Kin.Base.responses
 {
@@ -126,6 +129,24 @@ namespace Kin.Base.responses
             ResultMetaXdr = resultMetaXdr;
             Memo = memo;
             Links = links;
+        }
+
+        public List<LedgerEntryChanges> GetLedgerChanges()
+        {
+            TransactionMeta transactionMeta = this.ExtractTransactionMeta();
+            OperationMeta[] operationMetas = transactionMeta.Operations;
+            List<LedgerEntryChanges> changeList = new List<LedgerEntryChanges>();
+            foreach (var op in operationMetas)
+            {
+                changeList.Add(LedgerEntryChanges.FromXdr(op.Changes));
+            }
+            return changeList;
+        }
+
+        private TransactionMeta ExtractTransactionMeta()
+        {
+            XdrDataInputStream inputStream = new XdrDataInputStream(Convert.FromBase64String(this.ResultMetaXdr));
+            return TransactionMeta.Decode(inputStream);
         }
 
         ///
